@@ -53,6 +53,7 @@ for cog in cogList:
 	print('Cog Added: {}'.format(cog))
 	bot.add_cog(cog)
 
+
 # ***** EVENTS *****
 
 @bot.event
