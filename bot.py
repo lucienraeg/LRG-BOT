@@ -42,7 +42,7 @@ logger.addHandler(log)
 bot_prefix = "$"
 bot = commands.Bot(command_prefix=bot_prefix)
 
-# cogs
+# process cogs
 cogList = []
 
 cogList.append(Main.Main(bot))
@@ -52,7 +52,6 @@ cogList.append(Music.Music(bot))
 for cog in cogList:
 	print('Cog Added: {}'.format(cog))
 	bot.add_cog(cog)
-
 
 # ***** EVENTS *****
 

@@ -199,8 +199,6 @@ class Music:
     @commands.command(pass_context=True, no_pm=True)
     async def skip(self, ctx):
         """Vote to skip a song."""
-        isAdmin = ctx.message.author.permissions_in(ctx.message.channel).administrator
-
         state = self.get_voice_state(ctx.message.server)
 
         if not state.is_playing():
@@ -210,19 +208,9 @@ class Music:
             state.audio_player.cancel()
             del self.voice_states[ctx.message.server.id]
             await state.voice.disconnect()
-        elif ctx.message.author == state.current.requester or isAdmin:
+        else:
             await self.bot.say('Skipping song...')
             state.skip()
-        elif voter.id not in state.skip_votes:
-            state.skip_votes.add(voter.id)
-            total_votes = len(state.skip_votes)
-            if total_votes >= self.votes_needed:
-                await self.bot.say('Voteskip passed! Skipping song...')
-                state.skip()
-            else:
-                await self.bot.say('Votes to skip: {}/{}'.format(total_votes, self.votes_needed))
-        else:
-            await self.bot.say('You have already voted to skip this song.')
 
     @commands.command(pass_context=True, no_pm=True)
     async def playing(self, ctx):
@@ -235,14 +223,14 @@ class Music:
             embed = discord.Embed(title = "Currently Playing:", description = '{}\nSkips: {}/{}'.format(state.current, skip_count, self.votes_needed), color = 0x1caf32)
             await self.bot.say(embed=embed)
 
-    @commands.command(pass_context=True, no_pm=True)
-    async def setvotesneeded(self, ctx, votes_needed : int):
-        """Set votes needed to skip a song. (Admin only)"""
-        isAdmin = ctx.message.author.permissions_in(ctx.message.channel).administrator
+    # @commands.command(pass_context=True, no_pm=True)
+    # async def setvotesneeded(self, ctx, votes_needed : int):
+    #     """Set votes needed to skip a song. (Admin only)"""
+    #     isAdmin = ctx.message.author.permissions_in(ctx.message.channel).administrator
 
-        if isAdmin:
-        	self.votes_needed = votes_needed
-        	await self.bot.say('Votes needed to skip is now: {}'.format(votes_needed))
+    #     if isAdmin:
+    #     	self.votes_needed = votes_needed
+    #     	await self.bot.say('Votes needed to skip is now: {}'.format(votes_needed))
 
-        if not isAdmin:
-        	await self.bot.say('Sorry! You need to be an admin to use that command.')
+    #     if not isAdmin:
+    #     	await self.bot.say('Sorry! You need to be an admin to use that command.')
