@@ -1,0 +1,168 @@
+[2017-07-04 20:41:14,438] INFO: on_ready has successfully been registered as an event
+[2017-07-04 20:41:14,439] INFO: on_member_join has successfully been registered as an event
+[2017-07-04 20:41:14,439] INFO: logging in using static token
+[2017-07-04 20:41:15,002] DEBUG: GET https://discordapp.com/api/v6/users/@me with None has returned 200
+[2017-07-04 20:41:15,003] DEBUG: GET https://discordapp.com/api/v6/users/@me has received {'username': 'lrg-bot', 'verified': True, 'mfa_enabled': False, 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2', 'discriminator': '6234', 'email': None}
+[2017-07-04 20:41:15,017] DEBUG: GET https://discordapp.com/api/v6/gateway with None has returned 200
+[2017-07-04 20:41:15,017] DEBUG: GET https://discordapp.com/api/v6/gateway has received {'url': 'wss://gateway.discord.gg'}
+[2017-07-04 20:41:15,544] INFO: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+[2017-07-04 20:41:15,545] DEBUG: Dispatching event socket_raw_receive
+[2017-07-04 20:41:15,545] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['discord-gateway-prd-1-21']}}
+[2017-07-04 20:41:15,545] DEBUG: Dispatching event socket_response
+[2017-07-04 20:41:15,546] INFO: sent the identify payload to create the websocket
+[2017-07-04 20:41:15,799] DEBUG: Dispatching event socket_raw_receive
+[2017-07-04 20:41:15,799] DEBUG: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'lrg-bot', 'mfa_enabled': False, 'id': '303488348956131328', 'email': None, 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'session_id': 'acf00ad25c92388370464c2542cb32b2', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '303487767575396352'}], '_trace': ['discord-gateway-prd-1-21', 'discord-sessions-prd-1-9']}}
+[2017-07-04 20:41:15,799] DEBUG: Dispatching event socket_response
+[2017-07-04 20:41:15,804] DEBUG: Dispatching event socket_raw_receive
+[2017-07-04 20:41:15,805] DEBUG: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'voice_states': [{'user_id': '109798665517793280', 'suppress': False, 'session_id': 'd474a7cf4fab3f1a52e2accee3e4154b', 'self_video': False, 'self_mute': False, 'self_deaf': False, 'mute': False, 'deaf': False, 'channel_id': '303487767575396353'}], 'verification_level': 0, 'unavailable': False, 'splash': None, 'roles': [{'position': 0, 'permissions': 104324161, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '303487767575396352', 'hoist': False, 'color': 0}, {'position': 1, 'permissions': 2080898303, 'name': 'lrg-bot', 'mentionable': False, 'managed': True, 'id': '331315193734889473', 'hoist': False, 'color': 0}], 'region': 'sydney', 'presences': [{'user': {'id': '109751564956090368'}, 'status': 'online', 'game': {'type': 0, 'name': 'Minecraft'}}, {'user': {'id': '109798665517793280'}, 'status': 'online', 'game': {'type': 0, 'name': 'Rocket League'}}, {'user': {'id': '109801258960830464'}, 'status': 'online', 'game': {'type': 0, 'name': 'with the idea of studying'}}, {'user': {'id': '121876666942226432'}, 'status': 'online', 'game': None}, {'user': {'id': '303488348956131328'}, 'status': 'online', 'game': {'name': 'tell Luci if I stuff up'}}, {'user': {'id': '317938010941554690'}, 'status': 'online', 'game': None}], 'owner_id': '109798665517793280', 'name': 'LRG BOTS', 'mfa_level': 0, 'members': [{'user': {'username': 'ｐｆｉｐ߷ｓｔｙ', 'id': '109751564956090368', 'discriminator': '6480', 'avatar': '90c010b95b6c7839595381e77b743d34'}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T06:06:46.515427+00:00', 'deaf': False}, {'user': {'username': 'Luci', 'id': '109798665517793280', 'discriminator': '0538', 'avatar': 'f4c152c65d666de833e348607b62e408'}, 'roles': [], 'mute': False, 'joined_at': '2017-04-17T11:12:02.324000+00:00', 'deaf': False}, {'user': {'username': '⅁Oʎuuɐ◖', 'id': '109801258960830464', 'discriminator': '4259', 'avatar': 'c469e30155763ceb06379d0762cb7322'}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T03:57:49.429764+00:00', 'deaf': False}, {'user': {'username': 'LOGLADY', 'id': '121876666942226432', 'discriminator': '2691', 'avatar': 'aafeeac3c3b490c9974fa62073295e01'}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T07:00:36.270127+00:00', 'deaf': False}, {'user': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'roles': ['331315193734889473'], 'nick': 'Abby', 'mute': False, 'joined_at': '2017-07-03T06:08:17.690000+00:00', 'deaf': False}, {'user': {'username': 'lucienpro2', 'id': '317938010941554690', 'discriminator': '0519', 'avatar': None}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T06:26:24.798421+00:00', 'deaf': False}], 'member_count': 6, 'large': False, 'joined_at': '2017-07-03T06:08:17.690000+00:00', 'id': '303487767575396352', 'icon': None, 'features': [], 'explicit_content_filter': 0, 'emojis': [], 'default_message_notifications': 0, 'channels': [{'type': 0, 'topic': None, 'position': 0, 'permission_overwrites': [], 'name': 'general', 'last_message_id': '331746068075249666', 'id': '303487767575396352'}, {'user_limit': 0, 'type': 2, 'position': 0, 'permission_overwrites': [], 'name': 'General', 'id': '303487767575396353', 'bitrate': 64000}, {'type': 0, 'topic': None, 'position': 1, 'permission_overwrites': [], 'name': 'other', 'last_message_id': None, 'id': '331340566363242497'}, {'user_limit': 0, 'type': 2, 'position': 1, 'permission_overwrites': [], 'name': 'Second', 'id': '331620366390919179', 'bitrate': 64000}], 'application_id': None, 'afk_timeout': 300, 'afk_channel_id': None}}
+[2017-07-04 20:41:15,805] DEBUG: Dispatching event socket_response
+[2017-07-04 20:41:15,806] DEBUG: Dispatching event server_available
+[2017-07-04 20:41:16,429] DEBUG: Dispatching event socket_raw_receive
+[2017-07-04 20:41:16,429] DEBUG: WebSocket Event: {'t': 'TYPING_START', 's': 3, 'op': 0, 'd': {'user_id': '109798665517793280', 'timestamp': 1499164859, 'channel_id': '303487767575396352'}}
+[2017-07-04 20:41:16,429] DEBUG: Dispatching event socket_response
+[2017-07-04 20:41:16,429] DEBUG: Dispatching event typing
+[2017-07-04 20:41:17,805] DEBUG: Dispatching event ready
+[2017-07-04 20:41:17,805] DEBUG: Sending "{"op":3,"d":{"game":{"name":"tell Luci if I stuff up"},"afk":false,"since":0.0,"status":"online"}}" to change status
+[2017-07-04 20:41:17,805] DEBUG: Dispatching event socket_raw_send
+[2017-07-04 20:41:24,442] DEBUG: Dispatching event socket_raw_receive
+[2017-07-04 20:41:24,442] DEBUG: WebSocket Event: {'t': 'TYPING_START', 's': 4, 'op': 0, 'd': {'user_id': '109798665517793280', 'timestamp': 1499164867, 'channel_id': '303487767575396352'}}
+[2017-07-04 20:41:24,442] DEBUG: Dispatching event socket_response
+[2017-07-04 20:41:24,442] DEBUG: Dispatching event typing
+[2017-07-04 20:41:34,928] DEBUG: Dispatching event socket_raw_receive
+[2017-07-04 20:41:34,928] DEBUG: WebSocket Event: {'t': 'TYPING_START', 's': 5, 'op': 0, 'd': {'user_id': '109798665517793280', 'timestamp': 1499164878, 'channel_id': '303487767575396352'}}
+[2017-07-04 20:41:34,928] DEBUG: Dispatching event socket_response
+[2017-07-04 20:41:34,928] DEBUG: Dispatching event typing
+[2017-07-04 20:41:37,365] DEBUG: Dispatching event socket_raw_receive
+[2017-07-04 20:41:37,365] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 6, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-04T10:41:20.781000+00:00', 'pinned': False, 'nonce': '331746365249945600', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331746297117802506', 'embeds': [], 'edited_timestamp': None, 'content': '$play summertime charlie parker', 'channel_id': '303487767575396352', 'author': {'username': 'Luci', 'id': '109798665517793280', 'discriminator': '0538', 'avatar': 'f4c152c65d666de833e348607b62e408'}, 'attachments': []}}
+[2017-07-04 20:41:37,365] DEBUG: Dispatching event socket_response
+[2017-07-04 20:41:37,366] DEBUG: Dispatching event message
+[2017-07-04 20:41:37,366] DEBUG: Dispatching event command
+[2017-07-04 20:41:37,702] DEBUG: Dispatching event socket_raw_receive
+[2017-07-04 20:41:37,703] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 7, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-04T10:41:21.140000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331746298623688704', 'embeds': [], 'edited_timestamp': None, 'content': '`Request submitted for "summertime charlie parker".`', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
+[2017-07-04 20:41:37,703] DEBUG: Dispatching event socket_response
+[2017-07-04 20:41:37,703] DEBUG: Dispatching event message
+[2017-07-04 20:41:37,706] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"content":"`Request submitted for \"summertime charlie parker\".`"} has returned 200
+[2017-07-04 20:41:37,708] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-04T10:41:21.140000+00:00', 'mention_everyone': False, 'id': '331746298623688704', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': '`Request submitted for "summertime charlie parker".`', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
+[2017-07-04 20:41:37,709] INFO: attempting to join voice channel General
+[2017-07-04 20:41:37,944] DEBUG: Dispatching event socket_raw_receive
+[2017-07-04 20:41:37,944] DEBUG: WebSocket Event: {'t': 'VOICE_STATE_UPDATE', 's': 8, 'op': 0, 'd': {'user_id': '303488348956131328', 'suppress': False, 'session_id': 'acf00ad25c92388370464c2542cb32b2', 'self_video': False, 'self_mute': False, 'self_deaf': False, 'mute': False, 'guild_id': '303487767575396352', 'deaf': False, 'channel_id': '303487767575396353'}}
+[2017-07-04 20:41:37,944] DEBUG: Dispatching event socket_response
+[2017-07-04 20:41:37,944] DEBUG: Dispatching event voice_state_update
+[2017-07-04 20:41:38,151] DEBUG: Dispatching event socket_raw_receive
+[2017-07-04 20:41:38,151] DEBUG: WebSocket Event: {'t': 'VOICE_SERVER_UPDATE', 's': 9, 'op': 0, 'd': {'token': '1e14ea889d7aa90a', 'guild_id': '303487767575396352', 'endpoint': 'sydney445.discord.gg:80'}}
+[2017-07-04 20:41:38,151] DEBUG: Dispatching event socket_response
+[2017-07-04 20:41:38,152] INFO: Unhandled event VOICE_SERVER_UPDATE
+[2017-07-04 20:41:38,152] INFO: created opus encoder with {'sampling_rate': 48000, 'channels': 2, 'application': 2049, 'frame_length': 20, 'sample_size': 4, 'samples_per_frame': 960, 'frame_size': 3840, '_state': <discord.opus.LP_EncoderStruct object at 0x000000A2CB902548>}
+[2017-07-04 20:41:38,152] INFO: voice connection is connecting...
+[2017-07-04 20:41:38,153] INFO: Voice endpoint found sydney445.discord.gg (IP: 168.1.24.91)
+[2017-07-04 20:41:38,299] DEBUG: Voice websocket frame received: {'op': 8, 'd': {'heartbeat_interval': 55000}}
+[2017-07-04 20:41:38,323] DEBUG: Voice websocket frame received: {'op': 2, 'd': {'ssrc': 6, 'port': 52262, 'modes': ['plain', 'xsalsa20_poly1305'], 'ip': '168.1.24.91', 'heartbeat_interval': 5500}}
+[2017-07-04 20:41:38,357] DEBUG: received packet in initial_connection: b'\x06\x00\x00\x00144.132.105.183\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xb1\xec'
+[2017-07-04 20:41:38,357] DEBUG: detected ip: 144.132.105.183 port: 60593
+[2017-07-04 20:41:38,357] DEBUG: Selected protocol as {'op': 1, 'd': {'protocol': 'udp', 'data': {'address': '144.132.105.183', 'port': 60593, 'mode': 'xsalsa20_poly1305'}}}
+[2017-07-04 20:41:38,357] INFO: selected the voice protocol for use
+[2017-07-04 20:41:38,381] DEBUG: Voice websocket frame received: {'op': 4, 'd': {'secret_key': [165, 73, 129, 131, 40, 169, 206, 113, 196, 139, 4, 89, 30, 247, 165, 178, 206, 89, 3, 121, 253, 204, 33, 189, 170, 253, 207, 154, 82, 4, 119, 26], 'mode': 'xsalsa20_poly1305'}}
+[2017-07-04 20:41:38,381] INFO: received secret key for voice connection
+[2017-07-04 20:41:38,382] DEBUG: Voice speaking now set to True
+[2017-07-04 20:41:42,114] INFO: playing URL summertime charlie parker
+[2017-07-04 20:41:42,380] DEBUG: Dispatching event socket_raw_receive
+[2017-07-04 20:41:42,381] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 10, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-04T10:41:25.821000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331746318256963584', 'embeds': [{'type': 'rich', 'title': 'Queued:', 'description': '```css\nCharlie Parker - Summertime```Uploaded by Joe JazzMúsic\nRequested by <@109798665517793280>\nLength: 2m 51s', 'color': 15891226}], 'edited_timestamp': None, 'content': '', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
+[2017-07-04 20:41:42,381] DEBUG: Dispatching event socket_response
+[2017-07-04 20:41:42,381] DEBUG: Dispatching event message
+[2017-07-04 20:41:42,388] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"embed":{"color":15891226,"type":"rich","description":"```css\nCharlie Parker - Summertime```Uploaded by Joe JazzM\u00fasic\nRequested by <@109798665517793280>\nLength: 2m 51s","title":"Queued:"}} has returned 200
+[2017-07-04 20:41:42,388] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [{'color': 15891226, 'type': 'rich', 'description': '```css\nCharlie Parker - Summertime```Uploaded by Joe JazzMúsic\nRequested by <@109798665517793280>\nLength: 2m 51s', 'title': 'Queued:'}], 'timestamp': '2017-07-04T10:41:25.821000+00:00', 'mention_everyone': False, 'id': '331746318256963584', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': '', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
+[2017-07-04 20:41:42,389] DEBUG: Dispatching event command_completion
+[2017-07-04 20:41:42,414] DEBUG: Dispatching event socket_raw_receive
+[2017-07-04 20:41:42,414] DEBUG: WebSocket Event: {'t': 'MESSAGE_UPDATE', 's': 11, 'op': 0, 'd': {'id': '331746318256963584', 'embeds': [{'type': 'rich', 'title': 'Queued:', 'description': '```css\nCharlie Parker - Summertime```Uploaded by Joe JazzMúsic\nRequested by <@109798665517793280>\nLength: 2m 51s', 'color': 15891226}], 'channel_id': '303487767575396352'}}
+[2017-07-04 20:41:42,414] DEBUG: Dispatching event socket_response
+[2017-07-04 20:41:42,414] DEBUG: Dispatching event message_edit
+[2017-07-04 20:41:42,658] DEBUG: Dispatching event socket_raw_receive
+[2017-07-04 20:41:42,659] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 12, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-04T10:41:26.024000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331746319108538369', 'embeds': [{'type': 'rich', 'title': 'Now playing:', 'description': '```css\nCharlie Parker - Summertime```Uploaded by Joe JazzMúsic\nRequested by <@109798665517793280>\nLength: 2m 51s', 'color': 1879858}], 'edited_timestamp': None, 'content': '', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
+[2017-07-04 20:41:42,659] DEBUG: Dispatching event socket_response
+[2017-07-04 20:41:42,659] DEBUG: Dispatching event message
+[2017-07-04 20:41:42,671] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"embed":{"color":1879858,"type":"rich","description":"```css\nCharlie Parker - Summertime```Uploaded by Joe JazzM\u00fasic\nRequested by <@109798665517793280>\nLength: 2m 51s","title":"Now playing:"}} has returned 200
+[2017-07-04 20:41:42,672] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [{'color': 1879858, 'type': 'rich', 'description': '```css\nCharlie Parker - Summertime```Uploaded by Joe JazzMúsic\nRequested by <@109798665517793280>\nLength: 2m 51s', 'title': 'Now playing:'}], 'timestamp': '2017-07-04T10:41:26.024000+00:00', 'mention_everyone': False, 'id': '331746319108538369', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': '', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
+[2017-07-04 20:41:42,682] DEBUG: Dispatching event socket_raw_receive
+[2017-07-04 20:41:42,682] DEBUG: WebSocket Event: {'t': 'MESSAGE_UPDATE', 's': 13, 'op': 0, 'd': {'id': '331746319108538369', 'embeds': [{'type': 'rich', 'title': 'Now playing:', 'description': '```css\nCharlie Parker - Summertime```Uploaded by Joe JazzMúsic\nRequested by <@109798665517793280>\nLength: 2m 51s', 'color': 1879858}], 'channel_id': '303487767575396352'}}
+[2017-07-04 20:41:42,682] DEBUG: Dispatching event socket_response
+[2017-07-04 20:41:42,683] DEBUG: Dispatching event message_edit
+[2017-07-04 20:41:43,824] DEBUG: Keeping voice websocket alive with timestamp 1499164903824
+[2017-07-04 20:41:43,859] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499164903824}
+[2017-07-04 20:41:49,326] DEBUG: Keeping voice websocket alive with timestamp 1499164909326
+[2017-07-04 20:41:49,351] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499164909326}
+[2017-07-04 20:41:54,826] DEBUG: Keeping voice websocket alive with timestamp 1499164914826
+[2017-07-04 20:41:54,854] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499164914826}
+[2017-07-04 20:41:56,796] DEBUG: Keeping websocket alive with sequence 13
+[2017-07-04 20:41:57,027] DEBUG: Dispatching event socket_raw_receive
+[2017-07-04 20:41:57,028] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-04 20:41:57,028] DEBUG: Dispatching event socket_response
+[2017-07-04 20:42:00,328] DEBUG: Keeping voice websocket alive with timestamp 1499164920328
+[2017-07-04 20:42:00,355] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499164920328}
+[2017-07-04 20:42:05,829] DEBUG: Keeping voice websocket alive with timestamp 1499164925829
+[2017-07-04 20:42:05,852] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499164925829}
+[2017-07-04 20:42:11,330] DEBUG: Keeping voice websocket alive with timestamp 1499164931330
+[2017-07-04 20:42:11,360] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499164931330}
+[2017-07-04 20:42:11,781] DEBUG: Voice websocket frame received: {'op': 5, 'd': {'user_id': '109798665517793280', 'ssrc': 2, 'speaking': True}}
+[2017-07-04 20:42:12,404] DEBUG: Voice websocket frame received: {'op': 5, 'd': {'user_id': '109798665517793280', 'ssrc': 2, 'speaking': False}}
+[2017-07-04 20:42:16,832] DEBUG: Keeping voice websocket alive with timestamp 1499164936832
+[2017-07-04 20:42:16,865] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499164936832}
+[2017-07-04 20:42:22,337] DEBUG: Keeping voice websocket alive with timestamp 1499164942337
+[2017-07-04 20:42:22,370] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499164942337}
+[2017-07-04 20:42:27,838] DEBUG: Keeping voice websocket alive with timestamp 1499164947838
+[2017-07-04 20:42:27,866] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499164947838}
+[2017-07-04 20:42:33,341] DEBUG: Keeping voice websocket alive with timestamp 1499164953341
+[2017-07-04 20:42:33,373] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499164953341}
+[2017-07-04 20:42:38,048] DEBUG: Keeping websocket alive with sequence 13
+[2017-07-04 20:42:38,285] DEBUG: Dispatching event socket_raw_receive
+[2017-07-04 20:42:38,285] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-04 20:42:38,285] DEBUG: Dispatching event socket_response
+[2017-07-04 20:42:38,842] DEBUG: Keeping voice websocket alive with timestamp 1499164958842
+[2017-07-04 20:42:38,868] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499164958842}
+[2017-07-04 20:42:44,343] DEBUG: Keeping voice websocket alive with timestamp 1499164964343
+[2017-07-04 20:42:44,378] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499164964343}
+[2017-07-04 20:42:49,845] DEBUG: Keeping voice websocket alive with timestamp 1499164969845
+[2017-07-04 20:42:49,869] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499164969845}
+[2017-07-04 20:42:55,346] DEBUG: Keeping voice websocket alive with timestamp 1499164975346
+[2017-07-04 20:42:55,374] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499164975346}
+[2017-07-04 20:43:00,847] DEBUG: Keeping voice websocket alive with timestamp 1499164980847
+[2017-07-04 20:43:00,875] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499164980847}
+[2017-07-04 20:43:06,349] DEBUG: Keeping voice websocket alive with timestamp 1499164986349
+[2017-07-04 20:43:06,375] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499164986349}
+[2017-07-04 20:43:11,850] DEBUG: Keeping voice websocket alive with timestamp 1499164991850
+[2017-07-04 20:43:11,875] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499164991850}
+[2017-07-04 20:43:17,351] DEBUG: Keeping voice websocket alive with timestamp 1499164997351
+[2017-07-04 20:43:17,376] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499164997351}
+[2017-07-04 20:43:17,473] DEBUG: Dispatching event socket_raw_receive
+[2017-07-04 20:43:17,474] DEBUG: WebSocket Event: {'t': 'TYPING_START', 's': 14, 'op': 0, 'd': {'user_id': '109798665517793280', 'timestamp': 1499164980, 'channel_id': '303487767575396352'}}
+[2017-07-04 20:43:17,474] DEBUG: Dispatching event socket_response
+[2017-07-04 20:43:17,474] DEBUG: Dispatching event typing
+[2017-07-04 20:43:18,239] DEBUG: Dispatching event socket_raw_receive
+[2017-07-04 20:43:18,240] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 15, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-04T10:43:01.677000+00:00', 'pinned': False, 'nonce': '331746788602019840', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331746720306298880', 'embeds': [], 'edited_timestamp': None, 'content': '$stop', 'channel_id': '303487767575396352', 'author': {'username': 'Luci', 'id': '109798665517793280', 'discriminator': '0538', 'avatar': 'f4c152c65d666de833e348607b62e408'}, 'attachments': []}}
+[2017-07-04 20:43:18,240] DEBUG: Dispatching event socket_response
+[2017-07-04 20:43:18,240] DEBUG: Dispatching event message
+[2017-07-04 20:43:18,241] DEBUG: Dispatching event command
+[2017-07-04 20:43:18,554] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"content":"Song stopped and queue cleared."} has returned 200
+[2017-07-04 20:43:18,555] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-04T10:43:01.991000+00:00', 'mention_everyone': False, 'id': '331746721623179264', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': 'Song stopped and queue cleared.', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
+[2017-07-04 20:43:18,562] DEBUG: Dispatching event socket_raw_receive
+[2017-07-04 20:43:18,562] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 16, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-04T10:43:01.991000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331746721623179264', 'embeds': [], 'edited_timestamp': None, 'content': 'Song stopped and queue cleared.', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
+[2017-07-04 20:43:18,562] DEBUG: Dispatching event socket_response
+[2017-07-04 20:43:18,562] DEBUG: Dispatching event message
+[2017-07-04 20:43:18,811] DEBUG: Dispatching event socket_raw_receive
+[2017-07-04 20:43:18,812] DEBUG: WebSocket Event: {'t': 'VOICE_STATE_UPDATE', 's': 17, 'op': 0, 'd': {'user_id': '303488348956131328', 'suppress': False, 'session_id': 'acf00ad25c92388370464c2542cb32b2', 'self_video': False, 'self_mute': False, 'self_deaf': False, 'mute': False, 'guild_id': '303487767575396352', 'deaf': False, 'channel_id': None}}
+[2017-07-04 20:43:18,812] DEBUG: Dispatching event socket_response
+[2017-07-04 20:43:18,812] DEBUG: Dispatching event voice_state_update
+[2017-07-04 20:43:18,886] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"content":"Leaving voice channel..."} has returned 200
+[2017-07-04 20:43:18,886] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-04T10:43:02.319000+00:00', 'mention_everyone': False, 'id': '331746722998910976', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': 'Leaving voice channel...', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
+[2017-07-04 20:43:18,887] DEBUG: Dispatching event command_completion
+[2017-07-04 20:43:18,891] DEBUG: Dispatching event socket_raw_receive
+[2017-07-04 20:43:18,891] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 18, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-04T10:43:02.319000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331746722998910976', 'embeds': [], 'edited_timestamp': None, 'content': 'Leaving voice channel...', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
+[2017-07-04 20:43:18,891] DEBUG: Dispatching event socket_response
+[2017-07-04 20:43:18,892] DEBUG: Dispatching event message
+[2017-07-04 20:43:19,300] DEBUG: Keeping websocket alive with sequence 18
+[2017-07-04 20:43:19,529] DEBUG: Dispatching event socket_raw_receive
+[2017-07-04 20:43:19,530] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-04 20:43:19,530] DEBUG: Dispatching event socket_response
+[2017-07-04 20:44:00,552] DEBUG: Keeping websocket alive with sequence 18
+[2017-07-04 20:44:00,785] DEBUG: Dispatching event socket_raw_receive
+[2017-07-04 20:44:00,785] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-04 20:44:00,785] DEBUG: Dispatching event socket_response
