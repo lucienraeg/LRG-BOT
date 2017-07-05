@@ -2,6 +2,7 @@ import asyncio
 import discord
 from discord.ext import commands
 
+
 class VoiceEntry:
 
     def __init__(self, message, player):
