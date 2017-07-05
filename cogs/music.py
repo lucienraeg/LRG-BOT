@@ -1,6 +1,8 @@
 import asyncio
 import discord
 from discord.ext import commands
+from cogs import readabletime as ReadableTime
+from cogs import style as Style
 
 
 class VoiceEntry:
@@ -52,7 +54,7 @@ class VoiceState:
         while True:
             self.play_next_song.clear()
             self.current = await self.songs.get()
-            embed = discord.Embed(title = "Now playing:", description = str(self.current), color = 0x1caf32)
+            embed = discord.Embed(title = "Now playing:", description = str(self.current), color = Style.Colors.green)
             await self.bot.send_message(self.current.channel, embed=embed)
             self.current.player.start()
             await self.play_next_song.wait()
@@ -139,7 +141,7 @@ class Music:
         else:
             player.volume = 0.5
             entry = VoiceEntry(ctx.message, player)
-            embed = discord.Embed(title = "Queued:", description = str(entry), color = 0xf27b1a)
+            embed = discord.Embed(title = "Queued:", description = str(entry), color = Style.Colors.orange)
             await self.bot.say(embed=embed)
             await state.songs.put(entry)
 
@@ -221,7 +223,7 @@ class Music:
             await self.bot.say('Not currently playing anything.')
         else:
             skip_count = len(state.skip_votes)
-            embed = discord.Embed(title = "Currently Playing:", description = '{}\nSkips: {}/{}'.format(state.current, skip_count, self.votes_needed), color = 0x1caf32)
+            embed = discord.Embed(title = "Currently Playing:", description = '{}\nSkips: {}/{}'.format(state.current, skip_count, self.votes_needed), color = Style.Colors.green)
             await self.bot.say(embed=embed)
 
     # @commands.command(pass_context=True, no_pm=True)

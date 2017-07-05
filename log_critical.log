@@ -1,13 +1,13 @@
-[2017-07-04 22:49:46,762] INFO: on_ready has successfully been registered as an event
-[2017-07-04 22:49:46,763] INFO: on_member_join has successfully been registered as an event
-[2017-07-04 22:49:46,763] INFO: logging in using static token
-[2017-07-04 22:49:47,795] INFO: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
-[2017-07-04 22:49:47,796] INFO: sent the identify payload to create the websocket
-[2017-07-04 22:50:31,617] INFO: attempting to join voice channel General
-[2017-07-04 22:50:32,070] INFO: Unhandled event VOICE_SERVER_UPDATE
-[2017-07-04 22:50:32,071] INFO: created opus encoder with {'sampling_rate': 48000, 'channels': 2, 'application': 2049, 'frame_length': 20, 'sample_size': 4, 'samples_per_frame': 960, 'frame_size': 3840, '_state': <discord.opus.LP_EncoderStruct object at 0x000000D62694C2C8>}
-[2017-07-04 22:50:32,071] INFO: voice connection is connecting...
-[2017-07-04 22:50:32,082] INFO: Voice endpoint found sydney445.discord.gg (IP: 168.1.24.91)
-[2017-07-04 22:50:32,266] INFO: selected the voice protocol for use
-[2017-07-04 22:50:32,292] INFO: received secret key for voice connection
-[2017-07-04 22:50:37,767] INFO: playing URL https://www.youtube.com/watch?v=rDBbaGCCIhk
+[2017-07-05 12:56:09,763] INFO: on_ready has successfully been registered as an event
+[2017-07-05 12:56:09,764] INFO: on_member_join has successfully been registered as an event
+[2017-07-05 12:56:09,764] INFO: logging in using static token
+[2017-07-05 12:56:10,771] INFO: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+[2017-07-05 12:56:10,775] INFO: sent the identify payload to create the websocket
+[2017-07-05 12:56:20,944] INFO: attempting to join voice channel General
+[2017-07-05 12:56:21,597] INFO: Unhandled event VOICE_SERVER_UPDATE
+[2017-07-05 12:56:21,597] INFO: created opus encoder with {'sampling_rate': 48000, 'channels': 2, 'application': 2049, 'frame_length': 20, 'sample_size': 4, 'samples_per_frame': 960, 'frame_size': 3840, '_state': <discord.opus.LP_EncoderStruct object at 0x000000BE49607448>}
+[2017-07-05 12:56:21,598] INFO: voice connection is connecting...
+[2017-07-05 12:56:21,611] INFO: Voice endpoint found sydney329.discord.gg (IP: 168.1.24.87)
+[2017-07-05 12:56:21,789] INFO: selected the voice protocol for use
+[2017-07-05 12:56:21,814] INFO: received secret key for voice connection
+[2017-07-05 12:56:28,535] INFO: playing URL redbone

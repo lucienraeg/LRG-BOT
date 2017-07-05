@@ -1,210 +1,164 @@
-[2017-07-04 22:49:46,762] INFO: on_ready has successfully been registered as an event
-[2017-07-04 22:49:46,763] INFO: on_member_join has successfully been registered as an event
-[2017-07-04 22:49:46,763] INFO: logging in using static token
-[2017-07-04 22:49:47,237] DEBUG: GET https://discordapp.com/api/v6/users/@me with None has returned 200
-[2017-07-04 22:49:47,238] DEBUG: GET https://discordapp.com/api/v6/users/@me has received {'username': 'lrg-bot', 'verified': True, 'mfa_enabled': False, 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2', 'discriminator': '6234', 'email': None}
-[2017-07-04 22:49:47,254] DEBUG: GET https://discordapp.com/api/v6/gateway with None has returned 200
-[2017-07-04 22:49:47,254] DEBUG: GET https://discordapp.com/api/v6/gateway has received {'url': 'wss://gateway.discord.gg'}
-[2017-07-04 22:49:47,795] INFO: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
-[2017-07-04 22:49:47,795] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:49:47,795] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['discord-gateway-prd-1-19']}}
-[2017-07-04 22:49:47,796] DEBUG: Dispatching event socket_response
-[2017-07-04 22:49:47,796] INFO: sent the identify payload to create the websocket
-[2017-07-04 22:49:48,072] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:49:48,072] DEBUG: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'lrg-bot', 'mfa_enabled': False, 'id': '303488348956131328', 'email': None, 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'session_id': 'a028c0d38e43c29c7035c2ff713cc2a0', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '303487767575396352'}], '_trace': ['discord-gateway-prd-1-19', 'discord-sessions-prd-1-3']}}
-[2017-07-04 22:49:48,073] DEBUG: Dispatching event socket_response
-[2017-07-04 22:49:48,073] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:49:48,073] DEBUG: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'voice_states': [{'user_id': '303488348956131328', 'suppress': False, 'session_id': '8f27dbc9eabf1e4e3a73488e4a12a1d8', 'self_video': False, 'self_mute': False, 'self_deaf': False, 'mute': False, 'deaf': False, 'channel_id': '303487767575396353'}], 'verification_level': 0, 'unavailable': False, 'splash': None, 'roles': [{'position': 0, 'permissions': 104324161, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '303487767575396352', 'hoist': False, 'color': 0}, {'position': 1, 'permissions': 2080898303, 'name': 'lrg-bot', 'mentionable': False, 'managed': True, 'id': '331315193734889473', 'hoist': False, 'color': 0}], 'region': 'sydney', 'presences': [{'user': {'id': '109751564956090368'}, 'status': 'online', 'game': {'type': 0, 'name': 'Rocket League'}}, {'user': {'id': '109798665517793280'}, 'status': 'online', 'game': None}, {'user': {'id': '109801258960830464'}, 'status': 'online', 'game': {'type': 0, 'name': 'Rocket League'}}, {'user': {'id': '112092446006972416'}, 'status': 'online', 'game': None}, {'user': {'id': '121876666942226432'}, 'status': 'online', 'game': None}, {'user': {'id': '303488348956131328'}, 'status': 'online', 'game': {'name': 'tell Luci if I stuff up'}}, {'user': {'id': '317938010941554690'}, 'status': 'online', 'game': None}], 'owner_id': '109798665517793280', 'name': 'LRG BOTS', 'mfa_level': 0, 'members': [{'user': {'username': 'ｐｆｉｐ߷ｓｔｙ', 'id': '109751564956090368', 'discriminator': '6480', 'avatar': '90c010b95b6c7839595381e77b743d34'}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T06:06:46.515427+00:00', 'deaf': False}, {'user': {'username': 'Luci', 'id': '109798665517793280', 'discriminator': '0538', 'avatar': 'f4c152c65d666de833e348607b62e408'}, 'roles': [], 'mute': False, 'joined_at': '2017-04-17T11:12:02.324000+00:00', 'deaf': False}, {'user': {'username': '⅁Oʎuuɐ◖', 'id': '109801258960830464', 'discriminator': '4259', 'avatar': 'c469e30155763ceb06379d0762cb7322'}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T03:57:49.429764+00:00', 'deaf': False}, {'user': {'username': 'peteshw', 'id': '112092446006972416', 'discriminator': '3620', 'avatar': 'f2073d8c7e7de7d8b173939837f3e595'}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T10:44:12.308265+00:00', 'deaf': False}, {'user': {'username': 'LOGLADY', 'id': '121876666942226432', 'discriminator': '2691', 'avatar': 'aafeeac3c3b490c9974fa62073295e01'}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T07:00:36.270127+00:00', 'deaf': False}, {'user': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'roles': ['331315193734889473'], 'nick': 'Abby', 'mute': False, 'joined_at': '2017-07-03T06:08:17.690000+00:00', 'deaf': False}, {'user': {'username': 'lucienpro2', 'id': '317938010941554690', 'discriminator': '0519', 'avatar': None}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T06:26:24.798421+00:00', 'deaf': False}], 'member_count': 7, 'large': False, 'joined_at': '2017-07-03T06:08:17.690000+00:00', 'id': '303487767575396352', 'icon': None, 'features': [], 'explicit_content_filter': 0, 'emojis': [], 'default_message_notifications': 0, 'channels': [{'type': 0, 'topic': None, 'position': 0, 'permission_overwrites': [], 'name': 'general', 'last_message_id': '331778200675942400', 'id': '303487767575396352'}, {'user_limit': 0, 'type': 2, 'position': 0, 'permission_overwrites': [], 'name': 'General', 'id': '303487767575396353', 'bitrate': 64000}, {'type': 0, 'topic': None, 'position': 1, 'permission_overwrites': [], 'name': 'other', 'last_message_id': None, 'id': '331340566363242497'}, {'user_limit': 0, 'type': 2, 'position': 1, 'permission_overwrites': [], 'name': 'Second', 'id': '331620366390919179', 'bitrate': 64000}], 'application_id': None, 'afk_timeout': 300, 'afk_channel_id': None}}
-[2017-07-04 22:49:48,073] DEBUG: Dispatching event socket_response
-[2017-07-04 22:49:48,074] DEBUG: Dispatching event server_available
-[2017-07-04 22:49:50,075] DEBUG: Dispatching event ready
-[2017-07-04 22:49:50,075] DEBUG: Sending "{"op":3,"d":{"game":{"name":"tell Luci if I stuff up"},"afk":false,"since":0.0,"status":"online"}}" to change status
-[2017-07-04 22:49:50,075] DEBUG: Dispatching event socket_raw_send
-[2017-07-04 22:49:50,313] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:49:50,313] DEBUG: WebSocket Event: {'t': 'TYPING_START', 's': 3, 'op': 0, 'd': {'user_id': '109798665517793280', 'timestamp': 1499172573, 'channel_id': '303487767575396352'}}
-[2017-07-04 22:49:50,313] DEBUG: Dispatching event socket_response
-[2017-07-04 22:49:50,314] DEBUG: Dispatching event typing
-[2017-07-04 22:49:55,231] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:49:55,232] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 4, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-04T12:49:38.566000+00:00', 'pinned': False, 'nonce': '331778652570124288', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331778583968088067', 'embeds': [], 'edited_timestamp': None, 'content': '$skip', 'channel_id': '303487767575396352', 'author': {'username': 'Luci', 'id': '109798665517793280', 'discriminator': '0538', 'avatar': 'f4c152c65d666de833e348607b62e408'}, 'attachments': []}}
-[2017-07-04 22:49:55,232] DEBUG: Dispatching event socket_response
-[2017-07-04 22:49:55,232] DEBUG: Dispatching event message
-[2017-07-04 22:49:55,233] DEBUG: Dispatching event command
-[2017-07-04 22:49:55,571] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:49:55,571] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 5, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-04T12:49:38.901000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331778585373179906', 'embeds': [], 'edited_timestamp': None, 'content': 'Leaving voice channel...', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
-[2017-07-04 22:49:55,571] DEBUG: Dispatching event socket_response
-[2017-07-04 22:49:55,572] DEBUG: Dispatching event message
-[2017-07-04 22:49:55,577] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"content":"Leaving voice channel..."} has returned 200
-[2017-07-04 22:49:55,578] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-04T12:49:38.901000+00:00', 'mention_everyone': False, 'id': '331778585373179906', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': 'Leaving voice channel...', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
-[2017-07-04 22:49:55,579] DEBUG: Dispatching event command_error
-[2017-07-04 22:49:56,034] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:49:56,034] DEBUG: WebSocket Event: {'t': 'TYPING_START', 's': 6, 'op': 0, 'd': {'user_id': '109798665517793280', 'timestamp': 1499172579, 'channel_id': '303487767575396352'}}
-[2017-07-04 22:49:56,034] DEBUG: Dispatching event socket_response
-[2017-07-04 22:49:56,034] DEBUG: Dispatching event typing
-[2017-07-04 22:50:14,778] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:14,778] DEBUG: WebSocket Event: {'t': 'TYPING_START', 's': 7, 'op': 0, 'd': {'user_id': '109798665517793280', 'timestamp': 1499172598, 'channel_id': '303487767575396352'}}
-[2017-07-04 22:50:14,778] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:14,779] DEBUG: Dispatching event typing
-[2017-07-04 22:50:15,802] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:15,802] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 8, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-04T12:49:59.099000+00:00', 'pinned': False, 'nonce': '331778738989563904', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331778670089994242', 'embeds': [], 'edited_timestamp': None, 'content': '$stop', 'channel_id': '303487767575396352', 'author': {'username': 'Luci', 'id': '109798665517793280', 'discriminator': '0538', 'avatar': 'f4c152c65d666de833e348607b62e408'}, 'attachments': []}}
-[2017-07-04 22:50:15,802] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:15,802] DEBUG: Dispatching event message
-[2017-07-04 22:50:15,803] DEBUG: Dispatching event command
-[2017-07-04 22:50:15,803] DEBUG: Dispatching event command_completion
-[2017-07-04 22:50:22,316] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:22,316] DEBUG: WebSocket Event: {'t': 'TYPING_START', 's': 9, 'op': 0, 'd': {'user_id': '109798665517793280', 'timestamp': 1499172605, 'channel_id': '303487767575396352'}}
-[2017-07-04 22:50:22,316] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:22,316] DEBUG: Dispatching event typing
-[2017-07-04 22:50:25,289] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:25,290] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 10, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-04T12:50:08.658000+00:00', 'pinned': False, 'nonce': '331778778688651264', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331778710183215105', 'embeds': [{'video': {'width': 1280, 'url': 'https://www.youtube.com/embed/rDBbaGCCIhk', 'height': 720}, 'url': 'https://www.youtube.com/watch?v=rDBbaGCCIhk', 'type': 'video', 'title': 'Miami Nights 1984 - Accelerated', 'thumbnail': {'width': 480, 'url': 'https://i.ytimg.com/vi/rDBbaGCCIhk/hqdefault.jpg', 'proxy_url': 'https://images-ext-1.discordapp.net/external/AK9An9JnWNcpHct5u5p9C-6Dp3-VaX3s_1QS7uWvSpA/https/i.ytimg.com/vi/rDBbaGCCIhk/hqdefault.jpg', 'height': 360}, 'provider': {'url': 'https://www.youtube.com/', 'name': 'YouTube'}, 'description': 'New Retro Wave + Miami Nights 1984 Accelerated Stay Retro and Subscribe: http://bit.ly/1tmU0Dk Also Support: http://bit.ly/1zudbOi Get Your Retro Wear Here: ...', 'author': {'url': 'https://www.youtube.com/user/NewRetroWave', 'name': 'NewRetroWave'}}], 'edited_timestamp': None, 'content': '$play https://www.youtube.com/watch?v=rDBbaGCCIhk', 'channel_id': '303487767575396352', 'author': {'username': 'Luci', 'id': '109798665517793280', 'discriminator': '0538', 'avatar': 'f4c152c65d666de833e348607b62e408'}, 'attachments': []}}
-[2017-07-04 22:50:25,290] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:25,290] DEBUG: Dispatching event message
-[2017-07-04 22:50:25,290] DEBUG: Dispatching event command
-[2017-07-04 22:50:25,548] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:25,548] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 11, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-04T12:50:08.939000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331778711361683457', 'embeds': [], 'edited_timestamp': None, 'content': '`Request submitted!`', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
-[2017-07-04 22:50:25,549] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:25,549] DEBUG: Dispatching event message
-[2017-07-04 22:50:25,557] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"content":"`Request submitted!`"} has returned 200
-[2017-07-04 22:50:25,558] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-04T12:50:08.939000+00:00', 'mention_everyone': False, 'id': '331778711361683457', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': '`Request submitted!`', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
-[2017-07-04 22:50:25,841] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:25,841] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 12, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-04T12:50:09.236000+00:00', 'pinned': False, 'nonce': None, 'mentions': [{'username': 'Luci', 'id': '109798665517793280', 'discriminator': '0538', 'avatar': 'f4c152c65d666de833e348607b62e408'}], 'mention_roles': [], 'mention_everyone': False, 'id': '331778712607653898', 'embeds': [], 'edited_timestamp': None, 'content': 'Sorry <@109798665517793280>, you need to be in a voice channel for that command.\nYou can use "join <channel name>" to send me somewhere.', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
-[2017-07-04 22:50:25,841] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:25,842] DEBUG: Dispatching event message
-[2017-07-04 22:50:25,844] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"content":"Sorry <@109798665517793280>, you need to be in a voice channel for that command.\nYou can use \"join <channel name>\" to send me somewhere."} has returned 200
-[2017-07-04 22:50:25,846] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-04T12:50:09.236000+00:00', 'mention_everyone': False, 'id': '331778712607653898', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': 'Sorry <@109798665517793280>, you need to be in a voice channel for that command.\nYou can use "join <channel name>" to send me somewhere.', 'channel_id': '303487767575396352', 'mentions': [{'username': 'Luci', 'discriminator': '0538', 'id': '109798665517793280', 'avatar': 'f4c152c65d666de833e348607b62e408'}], 'type': 0}
-[2017-07-04 22:50:25,846] DEBUG: Dispatching event command_completion
-[2017-07-04 22:50:26,218] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:26,218] DEBUG: WebSocket Event: {'t': 'VOICE_STATE_UPDATE', 's': 13, 'op': 0, 'd': {'user_id': '303488348956131328', 'suppress': False, 'session_id': '8f27dbc9eabf1e4e3a73488e4a12a1d8', 'self_video': False, 'self_mute': False, 'self_deaf': False, 'mute': False, 'guild_id': '303487767575396352', 'deaf': False, 'channel_id': None}}
-[2017-07-04 22:50:26,218] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:26,219] DEBUG: Dispatching event voice_state_update
-[2017-07-04 22:50:28,501] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:28,502] DEBUG: WebSocket Event: {'t': 'TYPING_START', 's': 14, 'op': 0, 'd': {'user_id': '109798665517793280', 'timestamp': 1499172611, 'channel_id': '303487767575396352'}}
-[2017-07-04 22:50:28,502] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:28,502] DEBUG: Dispatching event typing
-[2017-07-04 22:50:29,047] DEBUG: Keeping websocket alive with sequence 14
-[2017-07-04 22:50:29,320] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:29,321] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-[2017-07-04 22:50:29,321] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:31,614] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:31,615] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 15, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-04T12:50:14.985000+00:00', 'pinned': False, 'nonce': '331778805234401280', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331778736720707584', 'embeds': [], 'edited_timestamp': None, 'content': '$join General', 'channel_id': '303487767575396352', 'author': {'username': 'Luci', 'id': '109798665517793280', 'discriminator': '0538', 'avatar': 'f4c152c65d666de833e348607b62e408'}, 'attachments': []}}
-[2017-07-04 22:50:31,615] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:31,616] DEBUG: Dispatching event message
-[2017-07-04 22:50:31,616] DEBUG: Dispatching event command
-[2017-07-04 22:50:31,617] INFO: attempting to join voice channel General
-[2017-07-04 22:50:31,847] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:31,848] DEBUG: WebSocket Event: {'t': 'VOICE_STATE_UPDATE', 's': 16, 'op': 0, 'd': {'user_id': '303488348956131328', 'suppress': False, 'session_id': 'a028c0d38e43c29c7035c2ff713cc2a0', 'self_video': False, 'self_mute': False, 'self_deaf': False, 'mute': False, 'guild_id': '303487767575396352', 'deaf': False, 'channel_id': '303487767575396353'}}
-[2017-07-04 22:50:31,849] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:31,849] DEBUG: Dispatching event voice_state_update
-[2017-07-04 22:50:32,070] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:32,070] DEBUG: WebSocket Event: {'t': 'VOICE_SERVER_UPDATE', 's': 17, 'op': 0, 'd': {'token': 'c33c33ab55ea3c5e', 'guild_id': '303487767575396352', 'endpoint': 'sydney445.discord.gg:80'}}
-[2017-07-04 22:50:32,070] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:32,070] INFO: Unhandled event VOICE_SERVER_UPDATE
-[2017-07-04 22:50:32,071] INFO: created opus encoder with {'sampling_rate': 48000, 'channels': 2, 'application': 2049, 'frame_length': 20, 'sample_size': 4, 'samples_per_frame': 960, 'frame_size': 3840, '_state': <discord.opus.LP_EncoderStruct object at 0x000000D62694C2C8>}
-[2017-07-04 22:50:32,071] INFO: voice connection is connecting...
-[2017-07-04 22:50:32,082] INFO: Voice endpoint found sydney445.discord.gg (IP: 168.1.24.91)
-[2017-07-04 22:50:32,208] DEBUG: Voice websocket frame received: {'op': 8, 'd': {'heartbeat_interval': 55000}}
-[2017-07-04 22:50:32,232] DEBUG: Voice websocket frame received: {'op': 2, 'd': {'ssrc': 1, 'port': 52629, 'modes': ['plain', 'xsalsa20_poly1305'], 'ip': '168.1.24.91', 'heartbeat_interval': 5500}}
-[2017-07-04 22:50:32,266] DEBUG: received packet in initial_connection: b'\x01\x00\x00\x00144.132.105.183\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`\xfe'
-[2017-07-04 22:50:32,266] DEBUG: detected ip: 144.132.105.183 port: 65120
-[2017-07-04 22:50:32,266] DEBUG: Selected protocol as {'op': 1, 'd': {'protocol': 'udp', 'data': {'address': '144.132.105.183', 'port': 65120, 'mode': 'xsalsa20_poly1305'}}}
-[2017-07-04 22:50:32,266] INFO: selected the voice protocol for use
-[2017-07-04 22:50:32,292] DEBUG: Voice websocket frame received: {'op': 4, 'd': {'secret_key': [160, 250, 181, 50, 138, 74, 189, 142, 29, 164, 254, 118, 177, 103, 53, 220, 22, 225, 222, 5, 94, 21, 242, 56, 40, 77, 172, 41, 254, 45, 146, 143], 'mode': 'xsalsa20_poly1305'}}
-[2017-07-04 22:50:32,292] INFO: received secret key for voice connection
-[2017-07-04 22:50:32,292] DEBUG: Voice speaking now set to True
-[2017-07-04 22:50:32,573] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:32,573] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 18, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-04T12:50:15.974000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331778740868612116', 'embeds': [], 'edited_timestamp': None, 'content': 'Ready to play audio in General', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
-[2017-07-04 22:50:32,573] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:32,574] DEBUG: Dispatching event message
-[2017-07-04 22:50:32,601] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"content":"Ready to play audio in General"} has returned 200
-[2017-07-04 22:50:32,602] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-04T12:50:15.974000+00:00', 'mention_everyone': False, 'id': '331778740868612116', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': 'Ready to play audio in General', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
-[2017-07-04 22:50:32,603] DEBUG: Dispatching event command_completion
-[2017-07-04 22:50:33,416] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:33,417] DEBUG: WebSocket Event: {'t': 'TYPING_START', 's': 19, 'op': 0, 'd': {'user_id': '109798665517793280', 'timestamp': 1499172616, 'channel_id': '303487767575396352'}}
-[2017-07-04 22:50:33,417] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:33,418] DEBUG: Dispatching event typing
-[2017-07-04 22:50:35,112] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:35,112] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 20, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-04T12:50:18.510000+00:00', 'pinned': False, 'nonce': '331778820006739968', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331778751505629184', 'embeds': [{'video': {'width': 1280, 'url': 'https://www.youtube.com/embed/rDBbaGCCIhk', 'height': 720}, 'url': 'https://www.youtube.com/watch?v=rDBbaGCCIhk', 'type': 'video', 'title': 'Miami Nights 1984 - Accelerated', 'thumbnail': {'width': 480, 'url': 'https://i.ytimg.com/vi/rDBbaGCCIhk/hqdefault.jpg', 'proxy_url': 'https://images-ext-1.discordapp.net/external/AK9An9JnWNcpHct5u5p9C-6Dp3-VaX3s_1QS7uWvSpA/https/i.ytimg.com/vi/rDBbaGCCIhk/hqdefault.jpg', 'height': 360}, 'provider': {'url': 'https://www.youtube.com/', 'name': 'YouTube'}, 'description': 'New Retro Wave + Miami Nights 1984 Accelerated Stay Retro and Subscribe: http://bit.ly/1tmU0Dk Also Support: http://bit.ly/1zudbOi Get Your Retro Wear Here: ...', 'author': {'url': 'https://www.youtube.com/user/NewRetroWave', 'name': 'NewRetroWave'}}], 'edited_timestamp': None, 'content': '$play https://www.youtube.com/watch?v=rDBbaGCCIhk', 'channel_id': '303487767575396352', 'author': {'username': 'Luci', 'id': '109798665517793280', 'discriminator': '0538', 'avatar': 'f4c152c65d666de833e348607b62e408'}, 'attachments': []}}
-[2017-07-04 22:50:35,112] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:35,112] DEBUG: Dispatching event message
-[2017-07-04 22:50:35,112] DEBUG: Dispatching event command
-[2017-07-04 22:50:35,382] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"content":"`Request submitted!`"} has returned 200
-[2017-07-04 22:50:35,382] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-04T12:50:18.676000+00:00', 'mention_everyone': False, 'id': '331778752201752578', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': '`Request submitted!`', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
-[2017-07-04 22:50:35,793] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:35,793] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 21, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-04T12:50:18.676000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331778752201752578', 'embeds': [], 'edited_timestamp': None, 'content': '`Request submitted!`', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
-[2017-07-04 22:50:35,793] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:35,801] DEBUG: Dispatching event message
-[2017-07-04 22:50:37,742] DEBUG: Keeping voice websocket alive with timestamp 1499172637742
-[2017-07-04 22:50:37,767] INFO: playing URL https://www.youtube.com/watch?v=rDBbaGCCIhk
-[2017-07-04 22:50:37,790] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499172637742}
-[2017-07-04 22:50:38,059] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"embed":{"color":15891226,"type":"rich","description":"```css\nMiami Nights 1984 - Accelerated```Uploaded by NewRetroWave\nRequested by <@109798665517793280>\nLength: 3m 55s","title":"Queued:"}} has returned 200
-[2017-07-04 22:50:38,060] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [{'color': 15891226, 'type': 'rich', 'description': '```css\nMiami Nights 1984 - Accelerated```Uploaded by NewRetroWave\nRequested by <@109798665517793280>\nLength: 3m 55s', 'title': 'Queued:'}], 'timestamp': '2017-07-04T12:50:21.442000+00:00', 'mention_everyone': False, 'id': '331778763803066368', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': '', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
-[2017-07-04 22:50:38,061] DEBUG: Dispatching event command_completion
-[2017-07-04 22:50:38,102] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:38,102] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 22, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-04T12:50:21.442000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331778763803066368', 'embeds': [{'type': 'rich', 'title': 'Queued:', 'description': '```css\nMiami Nights 1984 - Accelerated```Uploaded by NewRetroWave\nRequested by <@109798665517793280>\nLength: 3m 55s', 'color': 15891226}], 'edited_timestamp': None, 'content': '', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
-[2017-07-04 22:50:38,102] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:38,102] DEBUG: Dispatching event message
-[2017-07-04 22:50:38,105] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:38,105] DEBUG: WebSocket Event: {'t': 'MESSAGE_UPDATE', 's': 23, 'op': 0, 'd': {'id': '331778763803066368', 'embeds': [{'type': 'rich', 'title': 'Queued:', 'description': '```css\nMiami Nights 1984 - Accelerated```Uploaded by NewRetroWave\nRequested by <@109798665517793280>\nLength: 3m 55s', 'color': 15891226}], 'channel_id': '303487767575396352'}}
-[2017-07-04 22:50:38,105] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:38,105] DEBUG: Dispatching event message_edit
-[2017-07-04 22:50:38,348] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"embed":{"color":1879858,"type":"rich","description":"```css\nMiami Nights 1984 - Accelerated```Uploaded by NewRetroWave\nRequested by <@109798665517793280>\nLength: 3m 55s","title":"Now playing:"}} has returned 200
-[2017-07-04 22:50:38,349] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [{'color': 1879858, 'type': 'rich', 'description': '```css\nMiami Nights 1984 - Accelerated```Uploaded by NewRetroWave\nRequested by <@109798665517793280>\nLength: 3m 55s', 'title': 'Now playing:'}], 'timestamp': '2017-07-04T12:50:21.732000+00:00', 'mention_everyone': False, 'id': '331778765019414528', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': '', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
-[2017-07-04 22:50:38,368] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:38,368] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 24, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-04T12:50:21.732000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331778765019414528', 'embeds': [{'type': 'rich', 'title': 'Now playing:', 'description': '```css\nMiami Nights 1984 - Accelerated```Uploaded by NewRetroWave\nRequested by <@109798665517793280>\nLength: 3m 55s', 'color': 1879858}], 'edited_timestamp': None, 'content': '', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
-[2017-07-04 22:50:38,368] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:38,369] DEBUG: Dispatching event message
-[2017-07-04 22:50:38,394] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:38,394] DEBUG: WebSocket Event: {'t': 'MESSAGE_UPDATE', 's': 25, 'op': 0, 'd': {'id': '331778765019414528', 'embeds': [{'type': 'rich', 'title': 'Now playing:', 'description': '```css\nMiami Nights 1984 - Accelerated```Uploaded by NewRetroWave\nRequested by <@109798665517793280>\nLength: 3m 55s', 'color': 1879858}], 'channel_id': '303487767575396352'}}
-[2017-07-04 22:50:38,394] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:38,394] DEBUG: Dispatching event message_edit
-[2017-07-04 22:50:43,269] DEBUG: Keeping voice websocket alive with timestamp 1499172643269
-[2017-07-04 22:50:43,301] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499172643269}
-[2017-07-04 22:50:45,200] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:45,200] DEBUG: WebSocket Event: {'t': 'TYPING_START', 's': 26, 'op': 0, 'd': {'user_id': '109798665517793280', 'timestamp': 1499172628, 'channel_id': '303487767575396352'}}
-[2017-07-04 22:50:45,200] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:45,200] DEBUG: Dispatching event typing
-[2017-07-04 22:50:46,116] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:46,117] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 27, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-04T12:50:29.516000+00:00', 'pinned': False, 'nonce': '331778866190221312', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331778797668007936', 'embeds': [], 'edited_timestamp': None, 'content': '$skip', 'channel_id': '303487767575396352', 'author': {'username': 'Luci', 'id': '109798665517793280', 'discriminator': '0538', 'avatar': 'f4c152c65d666de833e348607b62e408'}, 'attachments': []}}
-[2017-07-04 22:50:46,117] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:46,117] DEBUG: Dispatching event message
-[2017-07-04 22:50:46,117] DEBUG: Dispatching event command
-[2017-07-04 22:50:46,407] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:46,407] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 28, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-04T12:50:29.791000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331778798821572608', 'embeds': [], 'edited_timestamp': None, 'content': 'Skipping song...', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
-[2017-07-04 22:50:46,408] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:46,408] DEBUG: Dispatching event message
-[2017-07-04 22:50:46,412] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"content":"Skipping song..."} has returned 200
-[2017-07-04 22:50:46,413] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-04T12:50:29.791000+00:00', 'mention_everyone': False, 'id': '331778798821572608', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': 'Skipping song...', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
-[2017-07-04 22:50:46,413] DEBUG: Dispatching event command_completion
-[2017-07-04 22:50:47,126] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:47,126] DEBUG: WebSocket Event: {'t': 'TYPING_START', 's': 29, 'op': 0, 'd': {'user_id': '109798665517793280', 'timestamp': 1499172630, 'channel_id': '303487767575396352'}}
-[2017-07-04 22:50:47,126] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:47,126] DEBUG: Dispatching event typing
-[2017-07-04 22:50:48,775] DEBUG: Keeping voice websocket alive with timestamp 1499172648775
-[2017-07-04 22:50:48,805] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499172648775}
-[2017-07-04 22:50:50,834] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:50,834] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 30, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-04T12:50:34.217000+00:00', 'pinned': False, 'nonce': '331778885903450112', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331778817385431040', 'embeds': [], 'edited_timestamp': None, 'content': '$skip', 'channel_id': '303487767575396352', 'author': {'username': 'Luci', 'id': '109798665517793280', 'discriminator': '0538', 'avatar': 'f4c152c65d666de833e348607b62e408'}, 'attachments': []}}
-[2017-07-04 22:50:50,834] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:50,835] DEBUG: Dispatching event message
-[2017-07-04 22:50:50,835] DEBUG: Dispatching event command
-[2017-07-04 22:50:51,097] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:51,098] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 31, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-04T12:50:34.444000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331778818337669122', 'embeds': [], 'edited_timestamp': None, 'content': 'Leaving voice channel...', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
-[2017-07-04 22:50:51,098] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:51,099] DEBUG: Dispatching event message
-[2017-07-04 22:50:51,102] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"content":"Leaving voice channel..."} has returned 200
-[2017-07-04 22:50:51,103] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-04T12:50:34.444000+00:00', 'mention_everyone': False, 'id': '331778818337669122', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': 'Leaving voice channel...', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
-[2017-07-04 22:50:51,134] DEBUG: Dispatching event command_completion
-[2017-07-04 22:50:51,364] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:51,365] DEBUG: WebSocket Event: {'t': 'VOICE_STATE_UPDATE', 's': 32, 'op': 0, 'd': {'user_id': '303488348956131328', 'suppress': False, 'session_id': 'a028c0d38e43c29c7035c2ff713cc2a0', 'self_video': False, 'self_mute': False, 'self_deaf': False, 'mute': False, 'guild_id': '303487767575396352', 'deaf': False, 'channel_id': None}}
-[2017-07-04 22:50:51,365] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:51,365] DEBUG: Dispatching event voice_state_update
-[2017-07-04 22:50:53,063] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:50:53,063] DEBUG: WebSocket Event: {'t': 'TYPING_START', 's': 33, 'op': 0, 'd': {'user_id': '109798665517793280', 'timestamp': 1499172636, 'channel_id': '303487767575396352'}}
-[2017-07-04 22:50:53,063] DEBUG: Dispatching event socket_response
-[2017-07-04 22:50:53,064] DEBUG: Dispatching event typing
-[2017-07-04 22:51:10,297] DEBUG: Keeping websocket alive with sequence 33
-[2017-07-04 22:51:10,535] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:51:10,535] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-[2017-07-04 22:51:10,536] DEBUG: Dispatching event socket_response
-[2017-07-04 22:51:51,549] DEBUG: Keeping websocket alive with sequence 33
-[2017-07-04 22:51:51,777] DEBUG: Dispatching event socket_raw_receive
-[2017-07-04 22:51:51,778] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-[2017-07-04 22:51:51,778] DEBUG: Dispatching event socket_response
+[2017-07-05 12:56:09,763] INFO: on_ready has successfully been registered as an event
+[2017-07-05 12:56:09,764] INFO: on_member_join has successfully been registered as an event
+[2017-07-05 12:56:09,764] INFO: logging in using static token
+[2017-07-05 12:56:10,199] DEBUG: GET https://discordapp.com/api/v6/users/@me with None has returned 200
+[2017-07-05 12:56:10,200] DEBUG: GET https://discordapp.com/api/v6/users/@me has received {'username': 'lrg-bot', 'verified': True, 'mfa_enabled': False, 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2', 'discriminator': '6234', 'email': None}
+[2017-07-05 12:56:10,214] DEBUG: GET https://discordapp.com/api/v6/gateway with None has returned 200
+[2017-07-05 12:56:10,215] DEBUG: GET https://discordapp.com/api/v6/gateway has received {'url': 'wss://gateway.discord.gg'}
+[2017-07-05 12:56:10,771] INFO: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+[2017-07-05 12:56:10,771] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:56:10,771] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['discord-gateway-prd-1-13']}}
+[2017-07-05 12:56:10,771] DEBUG: Dispatching event socket_response
+[2017-07-05 12:56:10,775] INFO: sent the identify payload to create the websocket
+[2017-07-05 12:56:11,022] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:56:11,022] DEBUG: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'lrg-bot', 'mfa_enabled': False, 'id': '303488348956131328', 'email': None, 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'session_id': '6cdd7f0e98c5c50008a65a5fa37a7621', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '303487767575396352'}], '_trace': ['discord-gateway-prd-1-13', 'discord-sessions-prd-1-1']}}
+[2017-07-05 12:56:11,023] DEBUG: Dispatching event socket_response
+[2017-07-05 12:56:11,023] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:56:11,024] DEBUG: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'voice_states': [{'user_id': '303488348956131328', 'suppress': False, 'session_id': '5f7cedc5a28a5dd53c7ac4eef3358dc4', 'self_video': False, 'self_mute': False, 'self_deaf': False, 'mute': False, 'deaf': False, 'channel_id': '303487767575396353'}], 'verification_level': 0, 'unavailable': False, 'splash': None, 'roles': [{'position': 0, 'permissions': 104324161, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '303487767575396352', 'hoist': False, 'color': 0}, {'position': 1, 'permissions': 2080898303, 'name': 'lrg-bot', 'mentionable': False, 'managed': True, 'id': '331315193734889473', 'hoist': False, 'color': 0}], 'region': 'sydney', 'presences': [{'user': {'id': '112092446006972416'}, 'status': 'idle', 'game': None}, {'user': {'id': '121876666942226432'}, 'status': 'online', 'game': {'type': 0, 'name': 'Terraria'}}, {'user': {'id': '303488348956131328'}, 'status': 'online', 'game': {'name': 'tell Luci if I stuff up'}}], 'owner_id': '109798665517793280', 'name': 'LRG BOTS', 'mfa_level': 0, 'members': [{'user': {'username': 'ｐｆｉｐ߷ｓｔｙ', 'id': '109751564956090368', 'discriminator': '6480', 'avatar': '90c010b95b6c7839595381e77b743d34'}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T06:06:46.515427+00:00', 'deaf': False}, {'user': {'username': 'Luci', 'id': '109798665517793280', 'discriminator': '0538', 'avatar': 'f4c152c65d666de833e348607b62e408'}, 'roles': [], 'mute': False, 'joined_at': '2017-04-17T11:12:02.324000+00:00', 'deaf': False}, {'user': {'username': '⅁Oʎuuɐ◖', 'id': '109801258960830464', 'discriminator': '4259', 'avatar': 'c469e30155763ceb06379d0762cb7322'}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T03:57:49.429764+00:00', 'deaf': False}, {'user': {'username': 'peteshw', 'id': '112092446006972416', 'discriminator': '3620', 'avatar': 'f2073d8c7e7de7d8b173939837f3e595'}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T10:44:12.308265+00:00', 'deaf': False}, {'user': {'username': 'LOGLADY', 'id': '121876666942226432', 'discriminator': '2691', 'avatar': 'aafeeac3c3b490c9974fa62073295e01'}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T07:00:36.270127+00:00', 'deaf': False}, {'user': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'roles': ['331315193734889473'], 'nick': 'Abby', 'mute': False, 'joined_at': '2017-07-03T06:08:17.690000+00:00', 'deaf': False}, {'user': {'username': 'lucienpro2', 'id': '317938010941554690', 'discriminator': '0519', 'avatar': None}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T06:26:24.798421+00:00', 'deaf': False}], 'member_count': 7, 'large': False, 'joined_at': '2017-07-03T06:08:17.690000+00:00', 'id': '303487767575396352', 'icon': None, 'features': [], 'explicit_content_filter': 0, 'emojis': [], 'default_message_notifications': 0, 'channels': [{'type': 0, 'topic': None, 'position': 0, 'permission_overwrites': [], 'name': 'general', 'last_message_id': '331990845920378880', 'id': '303487767575396352'}, {'user_limit': 0, 'type': 2, 'position': 0, 'permission_overwrites': [], 'name': 'General', 'id': '303487767575396353', 'bitrate': 64000}, {'type': 0, 'topic': None, 'position': 1, 'permission_overwrites': [], 'name': 'other', 'last_message_id': None, 'id': '331340566363242497'}, {'user_limit': 0, 'type': 2, 'position': 1, 'permission_overwrites': [], 'name': 'Second', 'id': '331620366390919179', 'bitrate': 64000}], 'application_id': None, 'afk_timeout': 300, 'afk_channel_id': None}}
+[2017-07-05 12:56:11,024] DEBUG: Dispatching event socket_response
+[2017-07-05 12:56:11,025] DEBUG: Dispatching event server_available
+[2017-07-05 12:56:12,935] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:56:12,936] DEBUG: WebSocket Event: {'t': 'TYPING_START', 's': 3, 'op': 0, 'd': {'user_id': '109798665517793280', 'timestamp': 1499223353, 'channel_id': '303487767575396352'}}
+[2017-07-05 12:56:12,936] DEBUG: Dispatching event socket_response
+[2017-07-05 12:56:12,936] DEBUG: Dispatching event typing
+[2017-07-05 12:56:13,031] DEBUG: Dispatching event ready
+[2017-07-05 12:56:13,031] DEBUG: Sending "{"op":3,"d":{"game":{"name":"tell Luci if I stuff up"},"afk":false,"since":0.0,"status":"online"}}" to change status
+[2017-07-05 12:56:13,031] DEBUG: Dispatching event socket_raw_send
+[2017-07-05 12:56:16,473] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:56:16,473] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 4, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-05T02:55:56.773000+00:00', 'pinned': False, 'nonce': '331991644570124288', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331991563204952066', 'embeds': [], 'edited_timestamp': None, 'content': '$play redbone', 'channel_id': '303487767575396352', 'author': {'username': 'Luci', 'id': '109798665517793280', 'discriminator': '0538', 'avatar': 'f4c152c65d666de833e348607b62e408'}, 'attachments': []}}
+[2017-07-05 12:56:16,473] DEBUG: Dispatching event socket_response
+[2017-07-05 12:56:16,474] DEBUG: Dispatching event message
+[2017-07-05 12:56:16,474] DEBUG: Dispatching event command
+[2017-07-05 12:56:16,817] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:56:16,818] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 5, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-05T02:55:57.144000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331991564761169921', 'embeds': [], 'edited_timestamp': None, 'content': '`Request submitted!`', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
+[2017-07-05 12:56:16,819] DEBUG: Dispatching event socket_response
+[2017-07-05 12:56:16,819] DEBUG: Dispatching event message
+[2017-07-05 12:56:16,823] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"content":"`Request submitted!`"} has returned 200
+[2017-07-05 12:56:16,825] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-05T02:55:57.144000+00:00', 'mention_everyone': False, 'id': '331991564761169921', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': '`Request submitted!`', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
+[2017-07-05 12:56:17,118] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:56:17,118] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 6, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-05T02:55:57.476000+00:00', 'pinned': False, 'nonce': None, 'mentions': [{'username': 'Luci', 'id': '109798665517793280', 'discriminator': '0538', 'avatar': 'f4c152c65d666de833e348607b62e408'}], 'mention_roles': [], 'mention_everyone': False, 'id': '331991566153678848', 'embeds': [], 'edited_timestamp': None, 'content': 'Sorry <@109798665517793280>, you need to be in a voice channel for that command.\nYou can use "join <channel name>" to send me somewhere.', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
+[2017-07-05 12:56:17,118] DEBUG: Dispatching event socket_response
+[2017-07-05 12:56:17,119] DEBUG: Dispatching event message
+[2017-07-05 12:56:17,123] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"content":"Sorry <@109798665517793280>, you need to be in a voice channel for that command.\nYou can use \"join <channel name>\" to send me somewhere."} has returned 200
+[2017-07-05 12:56:17,123] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-05T02:55:57.476000+00:00', 'mention_everyone': False, 'id': '331991566153678848', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': 'Sorry <@109798665517793280>, you need to be in a voice channel for that command.\nYou can use "join <channel name>" to send me somewhere.', 'channel_id': '303487767575396352', 'mentions': [{'username': 'Luci', 'discriminator': '0538', 'id': '109798665517793280', 'avatar': 'f4c152c65d666de833e348607b62e408'}], 'type': 0}
+[2017-07-05 12:56:17,123] DEBUG: Dispatching event command_completion
+[2017-07-05 12:56:19,016] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:56:19,017] DEBUG: WebSocket Event: {'t': 'TYPING_START', 's': 7, 'op': 0, 'd': {'user_id': '109798665517793280', 'timestamp': 1499223359, 'channel_id': '303487767575396352'}}
+[2017-07-05 12:56:19,017] DEBUG: Dispatching event socket_response
+[2017-07-05 12:56:19,017] DEBUG: Dispatching event typing
+[2017-07-05 12:56:20,943] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:56:20,943] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 8, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-05T02:56:01.252000+00:00', 'pinned': False, 'nonce': '331991663457075200', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331991581991370753', 'embeds': [], 'edited_timestamp': None, 'content': '$join General', 'channel_id': '303487767575396352', 'author': {'username': 'Luci', 'id': '109798665517793280', 'discriminator': '0538', 'avatar': 'f4c152c65d666de833e348607b62e408'}, 'attachments': []}}
+[2017-07-05 12:56:20,943] DEBUG: Dispatching event socket_response
+[2017-07-05 12:56:20,943] DEBUG: Dispatching event message
+[2017-07-05 12:56:20,944] DEBUG: Dispatching event command
+[2017-07-05 12:56:20,944] INFO: attempting to join voice channel General
+[2017-07-05 12:56:21,180] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:56:21,180] DEBUG: WebSocket Event: {'t': 'VOICE_STATE_UPDATE', 's': 9, 'op': 0, 'd': {'user_id': '303488348956131328', 'suppress': False, 'session_id': '6cdd7f0e98c5c50008a65a5fa37a7621', 'self_video': False, 'self_mute': False, 'self_deaf': False, 'mute': False, 'guild_id': '303487767575396352', 'deaf': False, 'channel_id': '303487767575396353'}}
+[2017-07-05 12:56:21,180] DEBUG: Dispatching event socket_response
+[2017-07-05 12:56:21,180] DEBUG: Dispatching event voice_state_update
+[2017-07-05 12:56:21,300] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:56:21,301] DEBUG: WebSocket Event: {'t': 'TYPING_START', 's': 10, 'op': 0, 'd': {'user_id': '109798665517793280', 'timestamp': 1499223361, 'channel_id': '303487767575396352'}}
+[2017-07-05 12:56:21,301] DEBUG: Dispatching event socket_response
+[2017-07-05 12:56:21,301] DEBUG: Dispatching event typing
+[2017-07-05 12:56:21,596] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:56:21,597] DEBUG: WebSocket Event: {'t': 'VOICE_SERVER_UPDATE', 's': 11, 'op': 0, 'd': {'token': 'd9ebe7aeb0a0c897', 'guild_id': '303487767575396352', 'endpoint': 'sydney329.discord.gg:80'}}
+[2017-07-05 12:56:21,597] DEBUG: Dispatching event socket_response
+[2017-07-05 12:56:21,597] INFO: Unhandled event VOICE_SERVER_UPDATE
+[2017-07-05 12:56:21,597] INFO: created opus encoder with {'sampling_rate': 48000, 'channels': 2, 'application': 2049, 'frame_length': 20, 'sample_size': 4, 'samples_per_frame': 960, 'frame_size': 3840, '_state': <discord.opus.LP_EncoderStruct object at 0x000000BE49607448>}
+[2017-07-05 12:56:21,598] INFO: voice connection is connecting...
+[2017-07-05 12:56:21,611] INFO: Voice endpoint found sydney329.discord.gg (IP: 168.1.24.87)
+[2017-07-05 12:56:21,738] DEBUG: Voice websocket frame received: {'op': 8, 'd': {'heartbeat_interval': 55000}}
+[2017-07-05 12:56:21,763] DEBUG: Voice websocket frame received: {'op': 2, 'd': {'ssrc': 1, 'port': 50169, 'modes': ['plain', 'xsalsa20_poly1305'], 'ip': '168.1.24.87', 'heartbeat_interval': 5500}}
+[2017-07-05 12:56:21,788] DEBUG: received packet in initial_connection: b'\x01\x00\x00\x00144.132.105.183\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00E\xdd'
+[2017-07-05 12:56:21,788] DEBUG: detected ip: 144.132.105.183 port: 56645
+[2017-07-05 12:56:21,789] DEBUG: Selected protocol as {'op': 1, 'd': {'protocol': 'udp', 'data': {'address': '144.132.105.183', 'port': 56645, 'mode': 'xsalsa20_poly1305'}}}
+[2017-07-05 12:56:21,789] INFO: selected the voice protocol for use
+[2017-07-05 12:56:21,814] DEBUG: Voice websocket frame received: {'op': 4, 'd': {'secret_key': [96, 105, 8, 161, 163, 234, 229, 49, 67, 201, 151, 25, 27, 187, 23, 231, 162, 100, 22, 242, 216, 181, 220, 197, 141, 120, 54, 153, 23, 243, 134, 238], 'mode': 'xsalsa20_poly1305'}}
+[2017-07-05 12:56:21,814] INFO: received secret key for voice connection
+[2017-07-05 12:56:21,815] DEBUG: Voice speaking now set to True
+[2017-07-05 12:56:22,081] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:56:22,081] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 12, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-05T02:56:02.380000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331991586722414609', 'embeds': [], 'edited_timestamp': None, 'content': 'Ready to play audio in General', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
+[2017-07-05 12:56:22,081] DEBUG: Dispatching event socket_response
+[2017-07-05 12:56:22,082] DEBUG: Dispatching event message
+[2017-07-05 12:56:22,087] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"content":"Ready to play audio in General"} has returned 200
+[2017-07-05 12:56:22,088] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-05T02:56:02.380000+00:00', 'mention_everyone': False, 'id': '331991586722414609', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': 'Ready to play audio in General', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
+[2017-07-05 12:56:22,088] DEBUG: Dispatching event command_completion
+[2017-07-05 12:56:25,368] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:56:25,368] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 13, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-05T02:56:05.717000+00:00', 'pinned': False, 'nonce': '331991681916207104', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331991600718938112', 'embeds': [], 'edited_timestamp': None, 'content': '$play redbone', 'channel_id': '303487767575396352', 'author': {'username': 'Luci', 'id': '109798665517793280', 'discriminator': '0538', 'avatar': 'f4c152c65d666de833e348607b62e408'}, 'attachments': []}}
+[2017-07-05 12:56:25,368] DEBUG: Dispatching event socket_response
+[2017-07-05 12:56:25,368] DEBUG: Dispatching event message
+[2017-07-05 12:56:25,369] DEBUG: Dispatching event command
+[2017-07-05 12:56:25,634] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:56:25,635] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 14, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-05T02:56:05.989000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331991601859526656', 'embeds': [], 'edited_timestamp': None, 'content': '`Request submitted!`', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
+[2017-07-05 12:56:25,635] DEBUG: Dispatching event socket_response
+[2017-07-05 12:56:25,636] DEBUG: Dispatching event message
+[2017-07-05 12:56:25,640] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"content":"`Request submitted!`"} has returned 200
+[2017-07-05 12:56:25,641] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-05T02:56:05.989000+00:00', 'mention_everyone': False, 'id': '331991601859526656', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': '`Request submitted!`', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
+[2017-07-05 12:56:27,264] DEBUG: Keeping voice websocket alive with timestamp 1499223387264
+[2017-07-05 12:56:27,289] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499223387264}
+[2017-07-05 12:56:28,535] INFO: playing URL redbone
+[2017-07-05 12:56:28,804] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:56:28,805] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 15, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-05T02:56:09.162000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331991615168315392', 'embeds': [{'type': 'rich', 'title': 'Queued:', 'description': '```css\nChildish Gambino - Redbone (Official Audio)```Uploaded by ChildishGambinoVEVO\nRequested by <@109798665517793280>\nLength: 5m 27s', 'color': 15891226}], 'edited_timestamp': None, 'content': '', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
+[2017-07-05 12:56:28,805] DEBUG: Dispatching event socket_response
+[2017-07-05 12:56:28,805] DEBUG: Dispatching event message
+[2017-07-05 12:56:28,810] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"embed":{"color":15891226,"type":"rich","description":"```css\nChildish Gambino - Redbone (Official Audio)```Uploaded by ChildishGambinoVEVO\nRequested by <@109798665517793280>\nLength: 5m 27s","title":"Queued:"}} has returned 200
+[2017-07-05 12:56:28,811] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [{'color': 15891226, 'type': 'rich', 'description': '```css\nChildish Gambino - Redbone (Official Audio)```Uploaded by ChildishGambinoVEVO\nRequested by <@109798665517793280>\nLength: 5m 27s', 'title': 'Queued:'}], 'timestamp': '2017-07-05T02:56:09.162000+00:00', 'mention_everyone': False, 'id': '331991615168315392', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': '', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
+[2017-07-05 12:56:28,811] DEBUG: Dispatching event command_completion
+[2017-07-05 12:56:28,862] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:56:28,862] DEBUG: WebSocket Event: {'t': 'MESSAGE_UPDATE', 's': 16, 'op': 0, 'd': {'id': '331991615168315392', 'embeds': [{'type': 'rich', 'title': 'Queued:', 'description': '```css\nChildish Gambino - Redbone (Official Audio)```Uploaded by ChildishGambinoVEVO\nRequested by <@109798665517793280>\nLength: 5m 27s', 'color': 15891226}], 'channel_id': '303487767575396352'}}
+[2017-07-05 12:56:28,862] DEBUG: Dispatching event socket_response
+[2017-07-05 12:56:28,862] DEBUG: Dispatching event message_edit
+[2017-07-05 12:56:29,087] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:56:29,088] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 17, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-05T02:56:09.341000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331991615918964738', 'embeds': [{'type': 'rich', 'title': 'Now playing:', 'description': '```css\nChildish Gambino - Redbone (Official Audio)```Uploaded by ChildishGambinoVEVO\nRequested by <@109798665517793280>\nLength: 5m 27s', 'color': 1879858}], 'edited_timestamp': None, 'content': '', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
+[2017-07-05 12:56:29,088] DEBUG: Dispatching event socket_response
+[2017-07-05 12:56:29,088] DEBUG: Dispatching event message
+[2017-07-05 12:56:29,093] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"embed":{"color":1879858,"type":"rich","description":"```css\nChildish Gambino - Redbone (Official Audio)```Uploaded by ChildishGambinoVEVO\nRequested by <@109798665517793280>\nLength: 5m 27s","title":"Now playing:"}} has returned 200
+[2017-07-05 12:56:29,095] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [{'color': 1879858, 'type': 'rich', 'description': '```css\nChildish Gambino - Redbone (Official Audio)```Uploaded by ChildishGambinoVEVO\nRequested by <@109798665517793280>\nLength: 5m 27s', 'title': 'Now playing:'}], 'timestamp': '2017-07-05T02:56:09.341000+00:00', 'mention_everyone': False, 'id': '331991615918964738', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': '', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
+[2017-07-05 12:56:29,129] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:56:29,129] DEBUG: WebSocket Event: {'t': 'MESSAGE_UPDATE', 's': 18, 'op': 0, 'd': {'id': '331991615918964738', 'embeds': [{'type': 'rich', 'title': 'Now playing:', 'description': '```css\nChildish Gambino - Redbone (Official Audio)```Uploaded by ChildishGambinoVEVO\nRequested by <@109798665517793280>\nLength: 5m 27s', 'color': 1879858}], 'channel_id': '303487767575396352'}}
+[2017-07-05 12:56:29,129] DEBUG: Dispatching event socket_response
+[2017-07-05 12:56:29,130] DEBUG: Dispatching event message_edit
+[2017-07-05 12:56:32,765] DEBUG: Keeping voice websocket alive with timestamp 1499223392765
+[2017-07-05 12:56:32,790] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499223392765}
+[2017-07-05 12:56:38,266] DEBUG: Keeping voice websocket alive with timestamp 1499223398266
+[2017-07-05 12:56:38,294] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499223398266}
+[2017-07-05 12:56:43,768] DEBUG: Keeping voice websocket alive with timestamp 1499223403768
+[2017-07-05 12:56:43,791] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499223403768}
+[2017-07-05 12:56:49,270] DEBUG: Keeping voice websocket alive with timestamp 1499223409270
+[2017-07-05 12:56:49,293] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499223409270}
+[2017-07-05 12:56:52,024] DEBUG: Keeping websocket alive with sequence 18
+[2017-07-05 12:56:52,263] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:56:52,263] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 12:56:52,263] DEBUG: Dispatching event socket_response
+[2017-07-05 12:56:54,771] DEBUG: Keeping voice websocket alive with timestamp 1499223414771
+[2017-07-05 12:56:54,797] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499223414771}
+[2017-07-05 12:57:00,271] DEBUG: Keeping voice websocket alive with timestamp 1499223420271
+[2017-07-05 12:57:00,294] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499223420271}
+[2017-07-05 12:57:05,771] DEBUG: Keeping voice websocket alive with timestamp 1499223425771
+[2017-07-05 12:57:05,795] DEBUG: Voice websocket frame received: {'op': 3, 'd': 1499223425771}
+[2017-07-05 12:57:09,031] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:57:09,032] DEBUG: WebSocket Event: {'t': 'TYPING_START', 's': 19, 'op': 0, 'd': {'user_id': '109798665517793280', 'timestamp': 1499223409, 'channel_id': '303487767575396352'}}
+[2017-07-05 12:57:09,032] DEBUG: Dispatching event socket_response
+[2017-07-05 12:57:09,032] DEBUG: Dispatching event typing
+[2017-07-05 12:57:09,778] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:57:09,778] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 20, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-05T02:56:50.046000+00:00', 'pinned': False, 'nonce': '331991868147499008', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331991786647977986', 'embeds': [], 'edited_timestamp': None, 'content': '$stop', 'channel_id': '303487767575396352', 'author': {'username': 'Luci', 'id': '109798665517793280', 'discriminator': '0538', 'avatar': 'f4c152c65d666de833e348607b62e408'}, 'attachments': []}}
+[2017-07-05 12:57:09,779] DEBUG: Dispatching event socket_response
+[2017-07-05 12:57:09,779] DEBUG: Dispatching event message
+[2017-07-05 12:57:09,779] DEBUG: Dispatching event command
+[2017-07-05 12:57:10,099] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"content":"Song stopped and queue cleared."} has returned 200
+[2017-07-05 12:57:10,100] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-05T02:56:50.416000+00:00', 'mention_everyone': False, 'id': '331991788199870476', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': 'Song stopped and queue cleared.', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
+[2017-07-05 12:57:10,116] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:57:10,116] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 21, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-05T02:56:50.416000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331991788199870476', 'embeds': [], 'edited_timestamp': None, 'content': 'Song stopped and queue cleared.', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
+[2017-07-05 12:57:10,117] DEBUG: Dispatching event socket_response
+[2017-07-05 12:57:10,117] DEBUG: Dispatching event message
+[2017-07-05 12:57:10,368] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:57:10,368] DEBUG: WebSocket Event: {'t': 'VOICE_STATE_UPDATE', 's': 22, 'op': 0, 'd': {'user_id': '303488348956131328', 'suppress': False, 'session_id': '6cdd7f0e98c5c50008a65a5fa37a7621', 'self_video': False, 'self_mute': False, 'self_deaf': False, 'mute': False, 'guild_id': '303487767575396352', 'deaf': False, 'channel_id': None}}
+[2017-07-05 12:57:10,369] DEBUG: Dispatching event socket_response
+[2017-07-05 12:57:10,369] DEBUG: Dispatching event voice_state_update
+[2017-07-05 12:57:10,454] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 12:57:10,454] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 23, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-05T02:56:50.736000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '331991789542047746', 'embeds': [], 'edited_timestamp': None, 'content': 'Leaving voice channel...', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
+[2017-07-05 12:57:10,455] DEBUG: Dispatching event socket_response
+[2017-07-05 12:57:10,455] DEBUG: Dispatching event message
+[2017-07-05 12:57:10,467] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"content":"Leaving voice channel..."} has returned 200
+[2017-07-05 12:57:10,468] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-05T02:56:50.736000+00:00', 'mention_everyone': False, 'id': '331991789542047746', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': 'Leaving voice channel...', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
+[2017-07-05 12:57:10,468] DEBUG: Dispatching event command_completion

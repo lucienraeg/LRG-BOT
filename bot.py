@@ -6,6 +6,7 @@ import logging
 # importing cogs
 from cogs import main as Main
 from cogs import music as Music
+from cogs import meta as Meta
 
 # getting opus
 if not discord.opus.is_loaded():
@@ -47,6 +48,8 @@ cogList = []
 
 cogList.append(Main.Main(bot))
 cogList.append(Music.Music(bot))
+cogList.append(Meta.BotInfo(bot))
+cogList.append(Meta.ServerInfo(bot))
 
 # add all cogs to bot object
 for cog in cogList:
