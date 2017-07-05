@@ -11,7 +11,7 @@ from cogs import meta as Meta
 # getting opus (for voice)
 if not discord.opus.is_loaded():
 	print("Loading Opus...")
-    discord.opus.load_opus('opus')
+	discord.opus.load_opus('opus')
 
 # logging config
 logger = logging.getLogger('discord')

@@ -1,104 +1,247 @@
-[2017-07-05 14:13:46,852] INFO: on_ready has successfully been registered as an event
-[2017-07-05 14:13:46,852] INFO: on_member_join has successfully been registered as an event
-[2017-07-05 14:13:46,853] INFO: on_reaction_add has successfully been registered as an event
-[2017-07-05 14:13:46,853] INFO: on_reaction_remove has successfully been registered as an event
-[2017-07-05 14:13:46,853] INFO: logging in using static token
-[2017-07-05 14:13:47,318] DEBUG: GET https://discordapp.com/api/v6/users/@me with None has returned 200
-[2017-07-05 14:13:47,319] DEBUG: GET https://discordapp.com/api/v6/users/@me has received {'username': 'lrg-bot', 'verified': True, 'mfa_enabled': False, 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2', 'discriminator': '6234', 'email': None}
-[2017-07-05 14:13:47,338] DEBUG: GET https://discordapp.com/api/v6/gateway with None has returned 200
-[2017-07-05 14:13:47,339] DEBUG: GET https://discordapp.com/api/v6/gateway has received {'url': 'wss://gateway.discord.gg'}
-[2017-07-05 14:13:47,860] INFO: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
-[2017-07-05 14:13:47,861] DEBUG: Dispatching event socket_raw_receive
-[2017-07-05 14:13:47,861] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['discord-gateway-prd-1-2']}}
-[2017-07-05 14:13:47,861] DEBUG: Dispatching event socket_response
-[2017-07-05 14:13:47,862] INFO: sent the identify payload to create the websocket
-[2017-07-05 14:13:48,155] DEBUG: Dispatching event socket_raw_receive
-[2017-07-05 14:13:48,156] DEBUG: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'lrg-bot', 'mfa_enabled': False, 'id': '303488348956131328', 'email': None, 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'session_id': '69f7390a976e27a88d19cd9930f23a5d', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '303487767575396352'}], '_trace': ['discord-gateway-prd-1-2', 'discord-sessions-prd-1-5']}}
-[2017-07-05 14:13:48,156] DEBUG: Dispatching event socket_response
-[2017-07-05 14:13:48,156] DEBUG: Dispatching event socket_raw_receive
-[2017-07-05 14:13:48,157] DEBUG: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'voice_states': [], 'verification_level': 0, 'unavailable': False, 'splash': None, 'roles': [{'position': 0, 'permissions': 104324161, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '303487767575396352', 'hoist': False, 'color': 0}, {'position': 2, 'permissions': 2080898303, 'name': 'Bots', 'mentionable': False, 'managed': True, 'id': '331315193734889473', 'hoist': True, 'color': 0}, {'position': 1, 'permissions': 2146958591, 'name': 'Admin', 'mentionable': False, 'managed': False, 'id': '332001285438177280', 'hoist': True, 'color': 0}], 'region': 'sydney', 'presences': [{'user': {'id': '109751564956090368'}, 'status': 'online', 'game': None}, {'user': {'id': '109798665517793280'}, 'status': 'online', 'game': None}, {'user': {'id': '112092446006972416'}, 'status': 'idle', 'game': None}, {'user': {'id': '303488348956131328'}, 'status': 'online', 'game': {'name': 'tell Luci if I stuff up'}}], 'owner_id': '109798665517793280', 'name': 'LRG BOTS', 'mfa_level': 0, 'members': [{'user': {'username': 'ｐｆｉｐ߷ｓｔｙ', 'id': '109751564956090368', 'discriminator': '6480', 'avatar': '90c010b95b6c7839595381e77b743d34'}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T06:06:46.515427+00:00', 'deaf': False}, {'user': {'username': 'Luci', 'id': '109798665517793280', 'discriminator': '0538', 'avatar': 'f4c152c65d666de833e348607b62e408'}, 'roles': ['332001285438177280'], 'nick': None, 'mute': False, 'joined_at': '2017-04-17T11:12:02.324000+00:00', 'deaf': False}, {'user': {'username': '⅁Oʎuuɐ◖', 'id': '109801258960830464', 'discriminator': '4259', 'avatar': 'c469e30155763ceb06379d0762cb7322'}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T03:57:49.429764+00:00', 'deaf': False}, {'user': {'username': 'peteshw', 'id': '112092446006972416', 'discriminator': '3620', 'avatar': 'f2073d8c7e7de7d8b173939837f3e595'}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T10:44:12.308265+00:00', 'deaf': False}, {'user': {'username': 'LOGLADY', 'id': '121876666942226432', 'discriminator': '2691', 'avatar': 'aafeeac3c3b490c9974fa62073295e01'}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T07:00:36.270127+00:00', 'deaf': False}, {'user': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'roles': ['331315193734889473'], 'nick': 'Abby', 'mute': False, 'joined_at': '2017-07-03T06:08:17.690000+00:00', 'deaf': False}, {'user': {'username': 'lucienpro2', 'id': '317938010941554690', 'discriminator': '0519', 'avatar': None}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T06:26:24.798421+00:00', 'deaf': False}], 'member_count': 7, 'large': False, 'joined_at': '2017-07-03T06:08:17.690000+00:00', 'id': '303487767575396352', 'icon': None, 'features': [], 'explicit_content_filter': 0, 'emojis': [{'roles': [], 'require_colons': True, 'name': 'Doraemon', 'managed': False, 'id': '332005122014052353'}, {'roles': [], 'require_colons': True, 'name': 'Harold', 'managed': False, 'id': '332005208131502080'}, {'roles': [], 'require_colons': True, 'name': 'AbbyLouise', 'managed': False, 'id': '332009803595382794'}], 'default_message_notifications': 0, 'channels': [{'type': 0, 'topic': None, 'position': 0, 'permission_overwrites': [], 'name': 'general', 'last_message_id': '332010705723195393', 'id': '303487767575396352'}, {'user_limit': 0, 'type': 2, 'position': 0, 'permission_overwrites': [], 'name': 'General', 'id': '303487767575396353', 'bitrate': 64000}, {'type': 0, 'topic': None, 'position': 1, 'permission_overwrites': [], 'name': 'other', 'last_message_id': None, 'id': '331340566363242497'}, {'user_limit': 0, 'type': 2, 'position': 1, 'permission_overwrites': [], 'name': 'Second', 'id': '331620366390919179', 'bitrate': 64000}], 'application_id': None, 'afk_timeout': 300, 'afk_channel_id': None}}
-[2017-07-05 14:13:48,157] DEBUG: Dispatching event socket_response
-[2017-07-05 14:13:48,158] DEBUG: Dispatching event server_available
-[2017-07-05 14:13:49,283] DEBUG: Dispatching event socket_raw_receive
-[2017-07-05 14:13:49,284] DEBUG: WebSocket Event: {'t': 'TYPING_START', 's': 3, 'op': 0, 'd': {'user_id': '109798665517793280', 'timestamp': 1499228009, 'channel_id': '303487767575396352'}}
-[2017-07-05 14:13:49,284] DEBUG: Dispatching event socket_response
-[2017-07-05 14:13:49,285] DEBUG: Dispatching event typing
-[2017-07-05 14:13:50,161] DEBUG: Dispatching event ready
-[2017-07-05 14:13:50,161] DEBUG: Sending "{"op":3,"d":{"game":{"name":"tell Luci if I stuff up"},"afk":false,"since":0.0,"status":"online"}}" to change status
-[2017-07-05 14:13:50,162] DEBUG: Dispatching event socket_raw_send
-[2017-07-05 14:13:53,648] DEBUG: Dispatching event socket_raw_receive
-[2017-07-05 14:13:53,648] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 4, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-05T04:13:33.963000+00:00', 'pinned': False, 'nonce': '332011178219798528', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '332011096875597825', 'embeds': [], 'edited_timestamp': None, 'content': 'okay lets go', 'channel_id': '303487767575396352', 'author': {'username': 'Luci', 'id': '109798665517793280', 'discriminator': '0538', 'avatar': 'f4c152c65d666de833e348607b62e408'}, 'attachments': []}}
-[2017-07-05 14:13:53,648] DEBUG: Dispatching event socket_response
-[2017-07-05 14:13:53,649] DEBUG: Dispatching event message
-[2017-07-05 14:13:57,749] DEBUG: Dispatching event socket_raw_receive
-[2017-07-05 14:13:57,749] DEBUG: WebSocket Event: {'t': 'MESSAGE_REACTION_ADD', 's': 5, 'op': 0, 'd': {'user_id': '109798665517793280', 'message_id': '332011096875597825', 'emoji': {'name': 'Doraemon', 'id': '332005122014052353'}, 'channel_id': '303487767575396352'}}
-[2017-07-05 14:13:57,749] DEBUG: Dispatching event socket_response
-[2017-07-05 14:13:57,749] DEBUG: Dispatching event reaction_add
-[2017-07-05 14:14:00,160] DEBUG: Dispatching event socket_raw_receive
-[2017-07-05 14:14:00,160] DEBUG: WebSocket Event: {'t': 'MESSAGE_REACTION_ADD', 's': 6, 'op': 0, 'd': {'user_id': '109798665517793280', 'message_id': '332011096875597825', 'emoji': {'name': 'AbbyLouise', 'id': '332009803595382794'}, 'channel_id': '303487767575396352'}}
-[2017-07-05 14:14:00,161] DEBUG: Dispatching event socket_response
-[2017-07-05 14:14:00,161] DEBUG: Dispatching event reaction_add
-[2017-07-05 14:14:00,456] DEBUG: Dispatching event socket_raw_receive
-[2017-07-05 14:14:00,457] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 7, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-05T04:13:40.696000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '332011125115977739', 'embeds': [], 'edited_timestamp': None, 'content': 'Hey is that me?', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
-[2017-07-05 14:14:00,458] DEBUG: Dispatching event socket_response
-[2017-07-05 14:14:00,459] DEBUG: Dispatching event message
-[2017-07-05 14:14:00,461] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"content":"Hey is that me?"} has returned 200
-[2017-07-05 14:14:00,462] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-05T04:13:40.696000+00:00', 'mention_everyone': False, 'id': '332011125115977739', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': 'Hey is that me?', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
-[2017-07-05 14:14:03,150] DEBUG: Dispatching event socket_raw_receive
-[2017-07-05 14:14:03,151] DEBUG: WebSocket Event: {'t': 'MESSAGE_REACTION_ADD', 's': 8, 'op': 0, 'd': {'user_id': '109798665517793280', 'message_id': '332011125115977739', 'emoji': {'name': 'AbbyLouise', 'id': '332009803595382794'}, 'channel_id': '303487767575396352'}}
-[2017-07-05 14:14:03,151] DEBUG: Dispatching event socket_response
-[2017-07-05 14:14:03,151] DEBUG: Dispatching event reaction_add
-[2017-07-05 14:14:03,423] DEBUG: Dispatching event socket_raw_receive
-[2017-07-05 14:14:03,424] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 9, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-05T04:13:43.732000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '332011137849622529', 'embeds': [], 'edited_timestamp': None, 'content': 'Hey is that me?', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
-[2017-07-05 14:14:03,424] DEBUG: Dispatching event socket_response
-[2017-07-05 14:14:03,425] DEBUG: Dispatching event message
-[2017-07-05 14:14:03,433] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"content":"Hey is that me?"} has returned 200
-[2017-07-05 14:14:03,434] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-05T04:13:43.732000+00:00', 'mention_everyone': False, 'id': '332011137849622529', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': 'Hey is that me?', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
-[2017-07-05 14:14:05,919] DEBUG: Dispatching event socket_raw_receive
-[2017-07-05 14:14:05,919] DEBUG: WebSocket Event: {'t': 'MESSAGE_REACTION_REMOVE', 's': 10, 'op': 0, 'd': {'user_id': '109798665517793280', 'message_id': '332011125115977739', 'emoji': {'name': 'AbbyLouise', 'id': '332009803595382794'}, 'channel_id': '303487767575396352'}}
-[2017-07-05 14:14:05,919] DEBUG: Dispatching event socket_response
-[2017-07-05 14:14:05,919] DEBUG: Dispatching event reaction_remove
-[2017-07-05 14:14:06,198] DEBUG: Dispatching event socket_raw_receive
-[2017-07-05 14:14:06,199] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 11, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-05T04:13:46.487000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '332011149404930050', 'embeds': [], 'edited_timestamp': None, 'content': 'Aw...', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
-[2017-07-05 14:14:06,199] DEBUG: Dispatching event socket_response
-[2017-07-05 14:14:06,200] DEBUG: Dispatching event message
-[2017-07-05 14:14:06,207] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"content":"Aw..."} has returned 200
-[2017-07-05 14:14:06,208] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-05T04:13:46.487000+00:00', 'mention_everyone': False, 'id': '332011149404930050', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': 'Aw...', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
-[2017-07-05 14:14:07,974] DEBUG: Dispatching event socket_raw_receive
-[2017-07-05 14:14:07,974] DEBUG: WebSocket Event: {'t': 'MESSAGE_REACTION_REMOVE', 's': 12, 'op': 0, 'd': {'user_id': '109798665517793280', 'message_id': '332011096875597825', 'emoji': {'name': 'AbbyLouise', 'id': '332009803595382794'}, 'channel_id': '303487767575396352'}}
-[2017-07-05 14:14:07,974] DEBUG: Dispatching event socket_response
-[2017-07-05 14:14:07,974] DEBUG: Dispatching event reaction_remove
-[2017-07-05 14:14:08,246] DEBUG: Dispatching event socket_raw_receive
-[2017-07-05 14:14:08,246] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 13, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-05T04:13:48.564000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '332011158116761611', 'embeds': [], 'edited_timestamp': None, 'content': 'Aw...', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
-[2017-07-05 14:14:08,246] DEBUG: Dispatching event socket_response
-[2017-07-05 14:14:08,247] DEBUG: Dispatching event message
-[2017-07-05 14:14:08,254] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"content":"Aw..."} has returned 200
-[2017-07-05 14:14:08,255] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-05T04:13:48.564000+00:00', 'mention_everyone': False, 'id': '332011158116761611', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': 'Aw...', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
-[2017-07-05 14:14:10,978] DEBUG: Dispatching event socket_raw_receive
-[2017-07-05 14:14:10,979] DEBUG: WebSocket Event: {'t': 'MESSAGE_REACTION_ADD', 's': 14, 'op': 0, 'd': {'user_id': '109798665517793280', 'message_id': '332011096875597825', 'emoji': {'name': 'AbbyLouise', 'id': '332009803595382794'}, 'channel_id': '303487767575396352'}}
-[2017-07-05 14:14:10,979] DEBUG: Dispatching event socket_response
-[2017-07-05 14:14:10,979] DEBUG: Dispatching event reaction_add
-[2017-07-05 14:14:11,253] DEBUG: Dispatching event socket_raw_receive
-[2017-07-05 14:14:11,253] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 15, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-05T04:13:51.578000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '332011170758393856', 'embeds': [], 'edited_timestamp': None, 'content': 'Hey is that me?', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
-[2017-07-05 14:14:11,253] DEBUG: Dispatching event socket_response
-[2017-07-05 14:14:11,254] DEBUG: Dispatching event message
-[2017-07-05 14:14:11,259] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"content":"Hey is that me?"} has returned 200
-[2017-07-05 14:14:11,259] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-05T04:13:51.578000+00:00', 'mention_everyone': False, 'id': '332011170758393856', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': 'Hey is that me?', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
-[2017-07-05 14:14:12,167] DEBUG: Dispatching event socket_raw_receive
-[2017-07-05 14:14:12,167] DEBUG: WebSocket Event: {'t': 'MESSAGE_REACTION_REMOVE', 's': 16, 'op': 0, 'd': {'user_id': '109798665517793280', 'message_id': '332011096875597825', 'emoji': {'name': 'AbbyLouise', 'id': '332009803595382794'}, 'channel_id': '303487767575396352'}}
-[2017-07-05 14:14:12,167] DEBUG: Dispatching event socket_response
-[2017-07-05 14:14:12,167] DEBUG: Dispatching event reaction_remove
-[2017-07-05 14:14:12,424] DEBUG: Dispatching event socket_raw_receive
-[2017-07-05 14:14:12,424] DEBUG: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 17, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2017-07-05T04:13:52.686000+00:00', 'pinned': False, 'nonce': None, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'id': '332011175405682690', 'embeds': [], 'edited_timestamp': None, 'content': 'Aw...', 'channel_id': '303487767575396352', 'author': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'attachments': []}}
-[2017-07-05 14:14:12,424] DEBUG: Dispatching event socket_response
-[2017-07-05 14:14:12,424] DEBUG: Dispatching event message
-[2017-07-05 14:14:12,427] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages with {"content":"Aw..."} has returned 200
-[2017-07-05 14:14:12,428] DEBUG: POST https://discordapp.com/api/v6/channels/303487767575396352/messages has received {'nonce': None, 'attachments': [], 'tts': False, 'embeds': [], 'timestamp': '2017-07-05T04:13:52.686000+00:00', 'mention_everyone': False, 'id': '332011175405682690', 'pinned': False, 'edited_timestamp': None, 'author': {'username': 'lrg-bot', 'discriminator': '6234', 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'mention_roles': [], 'content': 'Aw...', 'channel_id': '303487767575396352', 'mentions': [], 'type': 0}
-[2017-07-05 14:14:29,111] DEBUG: Keeping websocket alive with sequence 17
-[2017-07-05 14:14:29,340] DEBUG: Dispatching event socket_raw_receive
-[2017-07-05 14:14:29,340] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-[2017-07-05 14:14:29,340] DEBUG: Dispatching event socket_response
-[2017-07-05 14:15:10,364] DEBUG: Keeping websocket alive with sequence 17
-[2017-07-05 14:15:10,592] DEBUG: Dispatching event socket_raw_receive
-[2017-07-05 14:15:10,592] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-[2017-07-05 14:15:10,593] DEBUG: Dispatching event socket_response
+[2017-07-05 17:36:19,864] INFO: on_ready has successfully been registered as an event
+[2017-07-05 17:36:19,865] INFO: on_member_join has successfully been registered as an event
+[2017-07-05 17:36:19,865] INFO: on_reaction_add has successfully been registered as an event
+[2017-07-05 17:36:19,865] INFO: logging in using static token
+[2017-07-05 17:36:20,335] DEBUG: GET https://discordapp.com/api/v6/users/@me with None has returned 200
+[2017-07-05 17:36:20,336] DEBUG: GET https://discordapp.com/api/v6/users/@me has received {'username': 'lrg-bot', 'verified': True, 'mfa_enabled': False, 'bot': True, 'id': '303488348956131328', 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2', 'discriminator': '6234', 'email': None}
+[2017-07-05 17:36:20,359] DEBUG: GET https://discordapp.com/api/v6/gateway with None has returned 200
+[2017-07-05 17:36:20,360] DEBUG: GET https://discordapp.com/api/v6/gateway has received {'url': 'wss://gateway.discord.gg'}
+[2017-07-05 17:36:20,964] INFO: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+[2017-07-05 17:36:20,965] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:36:20,965] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['discord-gateway-prd-1-12']}}
+[2017-07-05 17:36:20,965] DEBUG: Dispatching event socket_response
+[2017-07-05 17:36:20,965] INFO: sent the identify payload to create the websocket
+[2017-07-05 17:36:21,263] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:36:21,264] DEBUG: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'lrg-bot', 'mfa_enabled': False, 'id': '303488348956131328', 'email': None, 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'session_id': 'c7413ecce65e7608b3838759a238220c', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '303487767575396352'}], '_trace': ['discord-gateway-prd-1-12', 'discord-sessions-prd-1-1']}}
+[2017-07-05 17:36:21,264] DEBUG: Dispatching event socket_response
+[2017-07-05 17:36:21,269] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:36:21,272] DEBUG: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'voice_states': [], 'verification_level': 0, 'unavailable': False, 'splash': None, 'roles': [{'position': 0, 'permissions': 104324161, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '303487767575396352', 'hoist': False, 'color': 0}, {'position': 2, 'permissions': 2080898303, 'name': 'Bots', 'mentionable': False, 'managed': True, 'id': '331315193734889473', 'hoist': True, 'color': 0}, {'position': 1, 'permissions': 2146958591, 'name': 'Admin', 'mentionable': False, 'managed': False, 'id': '332001285438177280', 'hoist': True, 'color': 0}], 'region': 'sydney', 'presences': [{'user': {'id': '109751564956090368'}, 'status': 'online', 'game': {'type': 0, 'name': 'The Binding of Isaac: Rebirth'}}, {'user': {'id': '112092446006972416'}, 'status': 'online', 'game': None}, {'user': {'id': '121876666942226432'}, 'status': 'online', 'game': None}, {'user': {'id': '303488348956131328'}, 'status': 'online', 'game': {'name': 'tell Luci if I stuff up'}}], 'owner_id': '109798665517793280', 'name': 'LRG BOTS', 'mfa_level': 0, 'members': [{'user': {'username': 'ｐｆｉｐ߷ｓｔｙ', 'id': '109751564956090368', 'discriminator': '6480', 'avatar': '90c010b95b6c7839595381e77b743d34'}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T06:06:46.515427+00:00', 'deaf': False}, {'user': {'username': 'Luci', 'id': '109798665517793280', 'discriminator': '0538', 'avatar': 'f4c152c65d666de833e348607b62e408'}, 'roles': ['332001285438177280'], 'nick': None, 'mute': False, 'joined_at': '2017-04-17T11:12:02.324000+00:00', 'deaf': False}, {'user': {'username': '⅁Oʎuuɐ◖', 'id': '109801258960830464', 'discriminator': '4259', 'avatar': 'c469e30155763ceb06379d0762cb7322'}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T03:57:49.429764+00:00', 'deaf': False}, {'user': {'username': 'peteshw', 'id': '112092446006972416', 'discriminator': '3620', 'avatar': 'f2073d8c7e7de7d8b173939837f3e595'}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T10:44:12.308265+00:00', 'deaf': False}, {'user': {'username': 'LOGLADY', 'id': '121876666942226432', 'discriminator': '2691', 'avatar': 'aafeeac3c3b490c9974fa62073295e01'}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T07:00:36.270127+00:00', 'deaf': False}, {'user': {'username': 'lrg-bot', 'id': '303488348956131328', 'discriminator': '6234', 'bot': True, 'avatar': '44df6e1cac1d6b503f0d69a1be6edcf2'}, 'roles': ['331315193734889473'], 'nick': 'Abby', 'mute': False, 'joined_at': '2017-07-03T06:08:17.690000+00:00', 'deaf': False}, {'user': {'username': 'lucienpro2', 'id': '317938010941554690', 'discriminator': '0519', 'avatar': None}, 'roles': [], 'mute': False, 'joined_at': '2017-07-04T06:26:24.798421+00:00', 'deaf': False}], 'member_count': 7, 'large': False, 'joined_at': '2017-07-03T06:08:17.690000+00:00', 'id': '303487767575396352', 'icon': None, 'features': [], 'explicit_content_filter': 0, 'emojis': [{'roles': [], 'require_colons': True, 'name': 'Doraemon', 'managed': False, 'id': '332005122014052353'}, {'roles': [], 'require_colons': True, 'name': 'Harold', 'managed': False, 'id': '332005208131502080'}, {'roles': [], 'require_colons': True, 'name': 'AbbyLouise', 'managed': False, 'id': '332009803595382794'}], 'default_message_notifications': 0, 'channels': [{'type': 0, 'topic': None, 'position': 0, 'permission_overwrites': [], 'name': 'general', 'last_message_id': '332061437730226179', 'id': '303487767575396352'}, {'user_limit': 0, 'type': 2, 'position': 0, 'permission_overwrites': [], 'name': 'General', 'id': '303487767575396353', 'bitrate': 64000}, {'type': 0, 'topic': None, 'position': 1, 'permission_overwrites': [], 'name': 'other', 'last_message_id': None, 'id': '331340566363242497'}, {'user_limit': 0, 'type': 2, 'position': 1, 'permission_overwrites': [], 'name': 'Second', 'id': '331620366390919179', 'bitrate': 64000}], 'application_id': None, 'afk_timeout': 300, 'afk_channel_id': None}}
+[2017-07-05 17:36:21,273] DEBUG: Dispatching event socket_response
+[2017-07-05 17:36:21,277] DEBUG: Dispatching event server_available
+[2017-07-05 17:36:23,278] DEBUG: Dispatching event ready
+[2017-07-05 17:36:23,279] DEBUG: Sending "{"op":3,"d":{"game":{"name":"tell Luci if I stuff up"},"afk":false,"since":0.0,"status":"online"}}" to change status
+[2017-07-05 17:36:23,279] DEBUG: Dispatching event socket_raw_send
+[2017-07-05 17:37:02,216] DEBUG: Keeping websocket alive with sequence 2
+[2017-07-05 17:37:02,483] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:37:02,483] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:37:02,483] DEBUG: Dispatching event socket_response
+[2017-07-05 17:37:43,466] DEBUG: Keeping websocket alive with sequence 2
+[2017-07-05 17:37:43,734] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:37:43,734] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:37:43,734] DEBUG: Dispatching event socket_response
+[2017-07-05 17:37:47,986] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:37:47,986] DEBUG: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 3, 'op': 0, 'd': {'user': {'id': '109751564956090368'}, 'status': 'online', 'roles': [], 'nick': None, 'guild_id': '303487767575396352', 'game': {'type': 0, 'name': 'xd'}}}
+[2017-07-05 17:37:47,987] DEBUG: Dispatching event socket_response
+[2017-07-05 17:37:47,987] DEBUG: Dispatching event member_update
+[2017-07-05 17:38:24,716] DEBUG: Keeping websocket alive with sequence 3
+[2017-07-05 17:38:24,942] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:38:24,942] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:38:24,942] DEBUG: Dispatching event socket_response
+[2017-07-05 17:39:05,968] DEBUG: Keeping websocket alive with sequence 3
+[2017-07-05 17:39:06,203] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:39:06,203] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:39:06,203] DEBUG: Dispatching event socket_response
+[2017-07-05 17:39:07,983] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:39:07,983] DEBUG: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 4, 'op': 0, 'd': {'user': {'id': '109751564956090368'}, 'status': 'online', 'roles': [], 'nick': None, 'guild_id': '303487767575396352', 'game': {'type': 0, 'name': 'Overwatch'}}}
+[2017-07-05 17:39:07,983] DEBUG: Dispatching event socket_response
+[2017-07-05 17:39:07,983] DEBUG: Dispatching event member_update
+[2017-07-05 17:39:47,219] DEBUG: Keeping websocket alive with sequence 4
+[2017-07-05 17:39:47,447] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:39:47,447] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:39:47,447] DEBUG: Dispatching event socket_response
+[2017-07-05 17:40:28,478] DEBUG: Keeping websocket alive with sequence 4
+[2017-07-05 17:40:28,726] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:40:28,726] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:40:28,726] DEBUG: Dispatching event socket_response
+[2017-07-05 17:40:47,841] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:40:47,841] DEBUG: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 5, 'op': 0, 'd': {'user': {'username': '⅁Oʎuuɐ◖', 'id': '109801258960830464', 'discriminator': '4259', 'avatar': 'c469e30155763ceb06379d0762cb7322'}, 'status': 'online', 'roles': [], 'nick': None, 'guild_id': '303487767575396352', 'game': None}}
+[2017-07-05 17:40:47,842] DEBUG: Dispatching event socket_response
+[2017-07-05 17:40:47,842] DEBUG: Dispatching event member_update
+[2017-07-05 17:41:09,731] DEBUG: Keeping websocket alive with sequence 5
+[2017-07-05 17:41:09,962] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:41:09,963] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:41:09,963] DEBUG: Dispatching event socket_response
+[2017-07-05 17:41:34,690] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:41:34,690] DEBUG: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 6, 'op': 0, 'd': {'user': {'id': '109798665517793280'}, 'status': 'online', 'roles': ['332001285438177280'], 'nick': None, 'guild_id': '303487767575396352', 'game': None}}
+[2017-07-05 17:41:34,690] DEBUG: Dispatching event socket_response
+[2017-07-05 17:41:34,691] DEBUG: Dispatching event member_update
+[2017-07-05 17:41:50,981] DEBUG: Keeping websocket alive with sequence 6
+[2017-07-05 17:41:51,206] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:41:51,206] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:41:51,206] DEBUG: Dispatching event socket_response
+[2017-07-05 17:41:58,487] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:41:58,488] DEBUG: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 7, 'op': 0, 'd': {'user': {'id': '109801258960830464'}, 'status': 'online', 'roles': [], 'nick': None, 'guild_id': '303487767575396352', 'game': {'type': 0, 'name': 'Rocket League'}}}
+[2017-07-05 17:41:58,488] DEBUG: Dispatching event socket_response
+[2017-07-05 17:41:58,488] DEBUG: Dispatching event member_update
+[2017-07-05 17:42:32,231] DEBUG: Keeping websocket alive with sequence 7
+[2017-07-05 17:42:32,461] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:42:32,461] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:42:32,461] DEBUG: Dispatching event socket_response
+[2017-07-05 17:43:13,482] DEBUG: Keeping websocket alive with sequence 7
+[2017-07-05 17:43:13,711] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:43:13,711] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:43:13,711] DEBUG: Dispatching event socket_response
+[2017-07-05 17:43:52,658] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:43:52,659] DEBUG: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 8, 'op': 0, 'd': {'user': {'id': '109801258960830464'}, 'status': 'online', 'roles': [], 'nick': None, 'guild_id': '303487767575396352', 'game': {'type': 0, 'name': 'with the idea of studying'}}}
+[2017-07-05 17:43:52,659] DEBUG: Dispatching event socket_response
+[2017-07-05 17:43:52,659] DEBUG: Dispatching event member_update
+[2017-07-05 17:43:54,732] DEBUG: Keeping websocket alive with sequence 8
+[2017-07-05 17:43:54,980] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:43:54,980] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:43:54,980] DEBUG: Dispatching event socket_response
+[2017-07-05 17:44:35,983] DEBUG: Keeping websocket alive with sequence 8
+[2017-07-05 17:44:36,209] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:44:36,209] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:44:36,209] DEBUG: Dispatching event socket_response
+[2017-07-05 17:44:57,622] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:44:57,622] DEBUG: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 9, 'op': 0, 'd': {'user': {'id': '109801258960830464'}, 'status': 'online', 'roles': [], 'nick': None, 'guild_id': '303487767575396352', 'game': {'type': 0, 'name': 'Rocket League'}}}
+[2017-07-05 17:44:57,622] DEBUG: Dispatching event socket_response
+[2017-07-05 17:44:57,622] DEBUG: Dispatching event member_update
+[2017-07-05 17:45:17,235] DEBUG: Keeping websocket alive with sequence 9
+[2017-07-05 17:45:17,469] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:45:17,469] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:45:17,469] DEBUG: Dispatching event socket_response
+[2017-07-05 17:45:58,485] DEBUG: Keeping websocket alive with sequence 9
+[2017-07-05 17:45:58,712] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:45:58,712] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:45:58,712] DEBUG: Dispatching event socket_response
+[2017-07-05 17:46:10,652] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:46:10,653] DEBUG: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 10, 'op': 0, 'd': {'user': {'id': '121876666942226432'}, 'status': 'online', 'roles': [], 'nick': None, 'guild_id': '303487767575396352', 'game': {'type': 0, 'name': 'Counter-Strike Global Offensive'}}}
+[2017-07-05 17:46:10,653] DEBUG: Dispatching event socket_response
+[2017-07-05 17:46:10,653] DEBUG: Dispatching event member_update
+[2017-07-05 17:46:39,736] DEBUG: Keeping websocket alive with sequence 10
+[2017-07-05 17:46:39,980] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:46:39,980] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:46:39,980] DEBUG: Dispatching event socket_response
+[2017-07-05 17:47:20,986] DEBUG: Keeping websocket alive with sequence 10
+[2017-07-05 17:47:21,211] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:47:21,212] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:47:21,212] DEBUG: Dispatching event socket_response
+[2017-07-05 17:48:02,236] DEBUG: Keeping websocket alive with sequence 10
+[2017-07-05 17:48:02,485] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:48:02,486] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:48:02,486] DEBUG: Dispatching event socket_response
+[2017-07-05 17:48:43,488] DEBUG: Keeping websocket alive with sequence 10
+[2017-07-05 17:48:43,728] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:48:43,728] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:48:43,728] DEBUG: Dispatching event socket_response
+[2017-07-05 17:49:24,741] DEBUG: Keeping websocket alive with sequence 10
+[2017-07-05 17:49:24,966] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:49:24,967] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:49:24,967] DEBUG: Dispatching event socket_response
+[2017-07-05 17:50:05,991] DEBUG: Keeping websocket alive with sequence 10
+[2017-07-05 17:50:06,222] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:50:06,223] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:50:06,223] DEBUG: Dispatching event socket_response
+[2017-07-05 17:50:47,242] DEBUG: Keeping websocket alive with sequence 10
+[2017-07-05 17:50:47,480] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:50:47,481] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:50:47,481] DEBUG: Dispatching event socket_response
+[2017-07-05 17:51:28,493] DEBUG: Keeping websocket alive with sequence 10
+[2017-07-05 17:51:28,737] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:51:28,737] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:51:28,737] DEBUG: Dispatching event socket_response
+[2017-07-05 17:52:09,745] DEBUG: Keeping websocket alive with sequence 10
+[2017-07-05 17:52:09,976] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:52:09,976] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:52:09,977] DEBUG: Dispatching event socket_response
+[2017-07-05 17:52:50,995] DEBUG: Keeping websocket alive with sequence 10
+[2017-07-05 17:52:51,229] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:52:51,230] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:52:51,230] DEBUG: Dispatching event socket_response
+[2017-07-05 17:53:12,642] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:53:12,642] DEBUG: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 11, 'op': 0, 'd': {'user': {'id': '109801258960830464'}, 'status': 'online', 'roles': [], 'nick': None, 'guild_id': '303487767575396352', 'game': {'type': 0, 'name': 'with the idea of studying'}}}
+[2017-07-05 17:53:12,642] DEBUG: Dispatching event socket_response
+[2017-07-05 17:53:12,643] DEBUG: Dispatching event member_update
+[2017-07-05 17:53:17,701] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:53:17,702] DEBUG: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 12, 'op': 0, 'd': {'user': {'id': '109801258960830464'}, 'status': 'online', 'roles': [], 'nick': None, 'guild_id': '303487767575396352', 'game': {'type': 0, 'name': 'Rocket League'}}}
+[2017-07-05 17:53:17,702] DEBUG: Dispatching event socket_response
+[2017-07-05 17:53:17,702] DEBUG: Dispatching event member_update
+[2017-07-05 17:53:27,666] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:53:27,666] DEBUG: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 13, 'op': 0, 'd': {'user': {'id': '109801258960830464'}, 'status': 'online', 'roles': [], 'nick': None, 'guild_id': '303487767575396352', 'game': {'type': 0, 'name': 'with the idea of studying'}}}
+[2017-07-05 17:53:27,667] DEBUG: Dispatching event socket_response
+[2017-07-05 17:53:27,667] DEBUG: Dispatching event member_update
+[2017-07-05 17:53:32,246] DEBUG: Keeping websocket alive with sequence 13
+[2017-07-05 17:53:32,474] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:53:32,475] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:53:32,475] DEBUG: Dispatching event socket_response
+[2017-07-05 17:54:13,497] DEBUG: Keeping websocket alive with sequence 13
+[2017-07-05 17:54:13,787] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:54:13,787] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:54:13,788] DEBUG: Dispatching event socket_response
+[2017-07-05 17:54:54,747] DEBUG: Keeping websocket alive with sequence 13
+[2017-07-05 17:54:54,980] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:54:54,980] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:54:54,980] DEBUG: Dispatching event socket_response
+[2017-07-05 17:55:17,635] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:55:17,636] DEBUG: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 14, 'op': 0, 'd': {'user': {'id': '109801258960830464'}, 'status': 'online', 'roles': [], 'nick': None, 'guild_id': '303487767575396352', 'game': {'type': 0, 'name': 'Rocket League'}}}
+[2017-07-05 17:55:17,636] DEBUG: Dispatching event socket_response
+[2017-07-05 17:55:17,636] DEBUG: Dispatching event member_update
+[2017-07-05 17:55:27,618] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:55:27,618] DEBUG: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 15, 'op': 0, 'd': {'user': {'id': '109801258960830464'}, 'status': 'online', 'roles': [], 'nick': None, 'guild_id': '303487767575396352', 'game': {'type': 0, 'name': 'with the idea of studying'}}}
+[2017-07-05 17:55:27,618] DEBUG: Dispatching event socket_response
+[2017-07-05 17:55:27,618] DEBUG: Dispatching event member_update
+[2017-07-05 17:55:35,998] DEBUG: Keeping websocket alive with sequence 15
+[2017-07-05 17:55:36,234] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:55:36,234] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:55:36,234] DEBUG: Dispatching event socket_response
+[2017-07-05 17:56:17,249] DEBUG: Keeping websocket alive with sequence 15
+[2017-07-05 17:56:17,474] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:56:17,474] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:56:17,474] DEBUG: Dispatching event socket_response
+[2017-07-05 17:56:58,500] DEBUG: Keeping websocket alive with sequence 15
+[2017-07-05 17:56:58,727] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:56:58,727] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:56:58,728] DEBUG: Dispatching event socket_response
+[2017-07-05 17:57:39,750] DEBUG: Keeping websocket alive with sequence 15
+[2017-07-05 17:57:39,994] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:57:39,995] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:57:39,995] DEBUG: Dispatching event socket_response
+[2017-07-05 17:58:21,001] DEBUG: Keeping websocket alive with sequence 15
+[2017-07-05 17:58:21,299] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:58:21,299] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:58:21,299] DEBUG: Dispatching event socket_response
+[2017-07-05 17:59:02,252] DEBUG: Keeping websocket alive with sequence 15
+[2017-07-05 17:59:02,522] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:59:02,522] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:59:02,522] DEBUG: Dispatching event socket_response
+[2017-07-05 17:59:43,502] DEBUG: Keeping websocket alive with sequence 15
+[2017-07-05 17:59:43,728] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 17:59:43,728] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 17:59:43,729] DEBUG: Dispatching event socket_response
+[2017-07-05 18:00:24,752] DEBUG: Keeping websocket alive with sequence 15
+[2017-07-05 18:00:24,988] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 18:00:24,989] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 18:00:24,989] DEBUG: Dispatching event socket_response
+[2017-07-05 18:01:06,002] DEBUG: Keeping websocket alive with sequence 15
+[2017-07-05 18:01:06,235] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 18:01:06,235] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 18:01:06,235] DEBUG: Dispatching event socket_response
+[2017-07-05 18:01:47,253] DEBUG: Keeping websocket alive with sequence 15
+[2017-07-05 18:01:47,486] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 18:01:47,486] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 18:01:47,486] DEBUG: Dispatching event socket_response
+[2017-07-05 18:02:28,504] DEBUG: Keeping websocket alive with sequence 15
+[2017-07-05 18:02:28,735] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 18:02:28,736] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 18:02:28,736] DEBUG: Dispatching event socket_response
+[2017-07-05 18:03:09,755] DEBUG: Keeping websocket alive with sequence 15
+[2017-07-05 18:03:09,992] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 18:03:09,992] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 18:03:09,992] DEBUG: Dispatching event socket_response
+[2017-07-05 18:03:51,006] DEBUG: Keeping websocket alive with sequence 15
+[2017-07-05 18:03:51,233] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 18:03:51,233] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 18:03:51,234] DEBUG: Dispatching event socket_response
+[2017-07-05 18:04:12,695] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 18:04:12,695] DEBUG: WebSocket Event: {'t': 'PRESENCE_UPDATE', 's': 16, 'op': 0, 'd': {'user': {'id': '109801258960830464'}, 'status': 'online', 'roles': [], 'nick': None, 'guild_id': '303487767575396352', 'game': {'type': 0, 'name': 'Rocket League'}}}
+[2017-07-05 18:04:12,695] DEBUG: Dispatching event socket_response
+[2017-07-05 18:04:12,696] DEBUG: Dispatching event member_update
+[2017-07-05 18:04:32,257] DEBUG: Keeping websocket alive with sequence 16
+[2017-07-05 18:04:32,484] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 18:04:32,484] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 18:04:32,484] DEBUG: Dispatching event socket_response
+[2017-07-05 18:05:13,508] DEBUG: Keeping websocket alive with sequence 16
+[2017-07-05 18:05:13,778] DEBUG: Dispatching event socket_raw_receive
+[2017-07-05 18:05:13,779] DEBUG: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2017-07-05 18:05:13,779] DEBUG: Dispatching event socket_response
