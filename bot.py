@@ -21,7 +21,7 @@ log_full.setLevel(logging.DEBUG)
 
 # file handler for ERROR and CRITICAL level logs
 log_critical = logging.FileHandler('log_critical.log', encoding='utf-8', mode='w')
-log_critical.setLevel(logging.ERROR)
+log_critical.setLevel(logging.INFO)
 
 # console logger
 log = logging.StreamHandler()

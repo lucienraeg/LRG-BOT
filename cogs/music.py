@@ -117,7 +117,7 @@ class Music:
     @commands.command(pass_context=True, no_pm=True)
     async def play(self, ctx, *, song : str):
         """Plays a song. Can be a YouTube URL or search."""
-        await self.bot.say('`Request submitted for "{}".`'.format(song))
+        await self.bot.say('`Request submitted!`'.format(song))
 
         state = self.get_voice_state(ctx.message.server)
         opts = {
