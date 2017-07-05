@@ -10,6 +10,7 @@ from cogs import meta as Meta
 
 # getting opus (for voice)
 if not discord.opus.is_loaded():
+	print("Loading Opus...")
     discord.opus.load_opus('opus')
 
 # logging config
@@ -76,12 +77,6 @@ async def on_reaction_add(reaction, user):
 	if reaction.emoji.name == "AbbyLouise":
 		server = reaction.message.server
 		await bot.send_message(server, "Hey that's me!")
-
-@bot.event
-async def on_reaction_remove(reaction, user):
-	if reaction.emoji.name == "AbbyLouise":
-		server = reaction.message.server
-		await bot.send_message(server, "Aw...")
 
 
 # run
