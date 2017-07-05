@@ -8,7 +8,7 @@ from cogs import main as Main
 from cogs import music as Music
 from cogs import meta as Meta
 
-# getting opus
+# getting opus (for voice)
 if not discord.opus.is_loaded():
     discord.opus.load_opus('opus')
 
@@ -70,6 +70,19 @@ async def on_member_join(member):
 	server = member.server
 	fmt = "Welcome {0.mention} to our lovely community!"
 	await bot.send_message(server, fmt.format(member))
+
+@bot.event
+async def on_reaction_add(reaction, user):
+	if reaction.emoji.name == "AbbyLouise":
+		server = reaction.message.server
+		await bot.send_message(server, "Hey that's me!")
+
+@bot.event
+async def on_reaction_remove(reaction, user):
+	if reaction.emoji.name == "AbbyLouise":
+		server = reaction.message.server
+		await bot.send_message(server, "Aw...")
+
 
 # run
 token = "MzAzNDg4MzQ4OTU2MTMxMzI4.DDu92w.K7M7-st4w2YAKEatji8KVOhMJwk"

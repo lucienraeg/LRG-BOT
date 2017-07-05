@@ -1,5 +1,7 @@
-[2017-07-05 14:01:02,798] INFO: on_ready has successfully been registered as an event
-[2017-07-05 14:01:02,798] INFO: on_member_join has successfully been registered as an event
-[2017-07-05 14:01:02,799] INFO: logging in using static token
-[2017-07-05 14:01:03,816] INFO: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
-[2017-07-05 14:01:03,820] INFO: sent the identify payload to create the websocket
+[2017-07-05 14:13:46,852] INFO: on_ready has successfully been registered as an event
+[2017-07-05 14:13:46,852] INFO: on_member_join has successfully been registered as an event
+[2017-07-05 14:13:46,853] INFO: on_reaction_add has successfully been registered as an event
+[2017-07-05 14:13:46,853] INFO: on_reaction_remove has successfully been registered as an event
+[2017-07-05 14:13:46,853] INFO: logging in using static token
+[2017-07-05 14:13:47,860] INFO: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+[2017-07-05 14:13:47,862] INFO: sent the identify payload to create the websocket
